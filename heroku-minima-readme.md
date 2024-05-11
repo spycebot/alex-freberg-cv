@@ -27,3 +27,37 @@ error: failed to push some refs to 'https://git.heroku.com/heroku-minima.git'
 PS F:\01 - Python\heroku\heroku-minima> git push heroku master
 Enumerating objects: 7, done.
 Counting objects: 100% (7/7), done.
+
+https://help.heroku.com/O0EXQZTA/how-do-i-switch-branches-from-master-to-main
+
+==========
+
+# 11 MAY 2024
+
+The template site courtesy of Dan Bevens has been successfully launched on www.terzotechnical.com
+using Heroku and of course Flask. 
+
+What this site, at this point in time, does not have, that dan-blevens-flask does have
+
+1. app.py / main.py
+2. index.html that is populated
+3. index.html as template for app.py
+
+## Steps
+
+1. Create app.py file at top level / and populate script contents.
+
+2. Activate development environment
+
+PS F:\01 - Python\heroku\heroku-minima> .venv\Scripts\activate
+
+3. Upgrade pip
+
+(.venv) PS F:\01 - Python\heroku\heroku-minima> python -m pip install --upgrade pip
+
+4. Install Flask
+
+(.venv) PS F:\01 - Python\heroku\heroku-minima> python -m install Flask
+
+NB: There is a project folder heroku-minima as well as a project folder flask-minima
+

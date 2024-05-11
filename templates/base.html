@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+    <title>Internet Web Site by Terzo Technical</title>
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, user-scalable=no" />
+    <!-- OK link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css" -->
+    <script src="{{ url_for('static', filename='terzo.js') }}"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Share+Tech+Mono&family=Special+Elite&family=Syne+Mono&family=Tillana&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='terzo.css') }}">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5714407334718985" crossorigin="anonymous"></script>
+    {% block head %}{% endblock %}
+</head>
+<body>
+    <div id="banner"><a href="/" class="header_one"><h1 class="syne-mono-regular">Internet Web Page</h1></a></div>
+    
+    <div id="content">
+    {% block body %}{% endblock %}
+    </div>
+
+    <div id="footer">
+
+        Copyright 2024 Terzo Technical. All rights reserved.
+        
+        <br>
+        &#62;
+        <a href="/terms">Terms</a> &#60;&#62;
+        <a href="/privacy">Privacy</a> &#60;&#62;
+        <a href="/contact">Contact</a>
+        &#60;
+    </div>
+</body>
+</html>

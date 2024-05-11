@@ -1,0 +1,134 @@
+/*
+    terzo.css
+    by Terzo Technical
+    Copyright (c) 2024 Shannon Ware
+*/
+
+body {
+    font-size: 200%;
+    color : black;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+#banner {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    border-bottom: 2px solid grey;
+    width: 100%;
+    background-color: bisque;
+    margin : 0;
+    padding : 5px;
+    /* box-shadow: 0 0 24px #000; */
+    background-image: linear-gradient(#fff, #fff, #fff, #ccc);
+}
+
+#banner a {
+    color: black;
+}
+
+#footer {
+    font-size: 60%;
+    font-family: "Syne Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding : 5px;
+    background-color: white;
+    border-top: 2px solid grey;
+    background-image: linear-gradient(#ccc, #fff, #fff, #fff);
+}
+
+#content {
+    /* background-color: rgb(177, 237, 187);
+    height: 100%;
+    width: 100%; */
+    margin: 0px;
+    padding: 10px;
+    /* box-shadow: .5em 0em 2em #000 inset,
+                -.5em 0em 2em #000 inset;
+    background-image: linear-gradient(90deg, #ccc, #fff, #fff, #fff, #ccc) ;
+     */
+}
+
+.syne-mono-regular {
+    font-family: "Syne Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.tillana-regular {
+    font-family: "Tillana", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.special-elite-regular {
+    font-family: "Special Elite", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.share-tech-mono-regular {
+    font-family: "Share Tech Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+    /* <uniquifier>: Use a unique and descriptive class name
+    // <weight>: Use a value from 100 to 900 */
+    
+.exo-terzo {
+    font-family: "Exo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.header_one {
+    text-decoration: none;
+}
+
+.resize {
+    width: 400px;
+    height: auto;
+}
+
+h1, h2, h3 {   
+    font-family: "Exo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* Handset */
+@media all and (min-width: 0px) and (max-width: 480px) {
+    button, input {
+        width: 100%;
+    }
+    
+}
+
+/* Tablet */
+@media all and (min-width: 481px) and (max-width: 800px) {
+    button {
+        width: 10em;
+    }
+}
+
+/* Desktop */
+@media only screen and (min-width:801px) {
+    button {
+        width: 10em;
+    }
+
+    form {
+        margin: 6px;
+        padding: 6px;
+    }/* smart phone css  */
+}
