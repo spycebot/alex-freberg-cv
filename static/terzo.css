@@ -12,6 +12,12 @@ body {
     padding: 0;
 }
 
+p {
+    font-family: "Share Tech Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
 #banner {
     position: sticky;
     top: 0;
