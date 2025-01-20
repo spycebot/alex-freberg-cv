@@ -61,3 +61,13 @@ PS F:\01 - Python\heroku\heroku-minima> .venv\Scripts\activate
 
 NB: There is a project folder heroku-minima as well as a project folder flask-minima
 
+==========
+
+### MON 20 JAN 2025
+
+Heroku-minima > alex-freberg-cv
+
+1. Heroku Endpoint
+2. Git Endpoint
+3. Virtual Environment
+
