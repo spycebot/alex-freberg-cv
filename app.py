@@ -44,5 +44,35 @@ def privacy():
 def contact():
     return render_template('contact.html')
 
+
+@app.get('/resume-support-engineer')
+def resume_support_engineer():
+    return render_template('curriculum-vitae.html')
+
+
+@app.get('/resume-data-engineer')
+def resume_data_engineer():
+    return render_template('curriculum-vitae.html')
+
+
+@app.get('/resume-full-stack-developer')
+def resume_full_stack_developer():
+    return render_template('curriculum-vitae.html')
+
+
+@app.get('/resume-administrator')
+def resume_administrator():
+    return render_template('curriculum-vitae.html')
+
+
+@app.get('/portfolio-data-engineer')
+def portfolio_data_engineer():
+    return render_template('curriculum-vitae.html')
+
+
+@app.get('/curriculum-vitae')
+def curriculum_vitae():
+    return render_template('curriculum-vitae.html')
+
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0')

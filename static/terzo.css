@@ -5,30 +5,118 @@
 */
 
 body {
-    font-size: 200%;
+    font-size: 100%;
     color : black;
     background-color: white;
-    margin: 0;
-    padding: 0;
+    margin: 0 4px;
+    padding: 0 4px;
 }
 
 p {
-    font-family: "Share Tech Mono", monospace;
+    /* font-family: "Share Tech Mono", monospace; */
+    font-family: "Smooch Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    margin: 4px 0px; 
+    padding: 0px;
+}
+
+a {
+    font-family: "Smooch Sans", serif;
+    font-optical-sizing: auto;
     font-weight: 400;
+    font-style: normal;
+
+}
+
+button  {
+    font-family: "Smooch Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+h1, h2, h3 {   
+    font-family: "Rowdies", serif;
+    font-weight: 500;
     font-style: normal;
 }
 
+h1, h3 {
+    margin: 0px; 
+    padding: 0px;
+
+}
+
+h2 {
+    margin: 4px 0px; 
+    padding: 0px;
+
+}
+
+h2, h3 {
+    border-bottom: 1px solid gray;
+
+}
+
+ul {
+    margin: 0px 0px 8px 16px;
+    padding: 0px;
+}
+
+li {
+    font-family: "Smooch Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.entry_description {
+    font-weight: 400;
+}
+
+.entry_date {
+    text-align: right;
+}
+
+.rowdies-light {
+    font-family: "Rowdies", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .rowdies-regular {
+    font-family: "Rowdies", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .rowdies-bold {
+    font-family: "Rowdies", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+.smooch-sans-normal {
+    font-family: "Smooch Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
 #banner {
-    position: sticky;
+    /* position: sticky;
     top: 0;
-    background-color: white;
+    background-color: #c4f4ff;
     border-bottom: 2px solid grey;
     width: 100%;
-    background-color: bisque;
     margin : 0;
     padding : 5px;
-    /* box-shadow: 0 0 24px #000; */
-    background-image: linear-gradient(#fff, #fff, #fff, #ccc);
+    box-shadow: 0 0 24px #000;
+    background-image: linear-gradient(#fff, #fff, #fff, #ccc); */
 }
 
 #banner a {
@@ -48,6 +136,7 @@ p {
     background-color: white;
     border-top: 2px solid grey;
     background-image: linear-gradient(#ccc, #fff, #fff, #fff);
+    display: none;
 }
 
 #content {
@@ -55,46 +144,14 @@ p {
     height: 100%;
     width: 100%; */
     margin: 0px;
-    padding: 10px;
+    padding: 0px;
     /* box-shadow: .5em 0em 2em #000 inset,
                 -.5em 0em 2em #000 inset;
     background-image: linear-gradient(90deg, #ccc, #fff, #fff, #fff, #ccc) ;
      */
 }
 
-.syne-mono-regular {
-    font-family: "Syne Mono", monospace;
-    font-weight: 400;
-    font-style: normal;
-}
 
-.tillana-regular {
-    font-family: "Tillana", system-ui;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.special-elite-regular {
-    font-family: "Special Elite", system-ui;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.share-tech-mono-regular {
-    font-family: "Share Tech Mono", monospace;
-    font-weight: 400;
-    font-style: normal;
-}
-
-    /* <uniquifier>: Use a unique and descriptive class name
-    // <weight>: Use a value from 100 to 900 */
-    
-.exo-terzo {
-    font-family: "Exo", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-}
 
 .header_one {
     text-decoration: none;
@@ -105,11 +162,31 @@ p {
     height: auto;
 }
 
-h1, h2, h3 {   
-    font-family: "Exo", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
+#occupation {
+    position: absolute;
+    top: -10px;
+    left: 0px;
+}
+
+#address {
+    position: absolute;
+    top: -10px;
+    right: 0px;
+    text-align: right;
+}
+
+#address span {
+    display: block;
+}
+
+#skills_left {
+    float: left;
+    width: 50%;
+}
+
+#skills_right {
+    float: right;
+    width: 50%;
 }
 
 /* Handset */
@@ -118,12 +195,20 @@ h1, h2, h3 {
         width: 100%;
     }
     
+
+    #avatar {
+        width : 128px;
+    }
 }
 
 /* Tablet */
 @media all and (min-width: 481px) and (max-width: 800px) {
     button {
         width: 10em;
+    }
+
+    #avatar {
+        width : 256px;
     }
 }
 
@@ -137,4 +222,30 @@ h1, h2, h3 {
         margin: 6px;
         padding: 6px;
     }/* smart phone css  */
+
+    #avatar {
+        width : 512px;
+    }
+}
+
+@media print {
+    body {
+      color: black;
+      margin: 0;
+      padding: 0;
+    }
+    
+    /*
+    #footer {
+      display: none;
+    }
+      */
+
+    #occupation {
+        top: -10px;
+    }
+    
+    #address {
+        top: -10px;
+    }
 }

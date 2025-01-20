@@ -71,3 +71,25 @@ Heroku-minima > alex-freberg-cv
 2. Git Endpoint
 3. Virtual Environment
 
+(.venv) PS C:\Projects\alex-freberg-cv\heroku-minima> git add .
+(.venv) PS C:\Projects\alex-freberg-cv\heroku-minima> git commit -m "Repurpose heroku-minima for alex-freberg-cv"
+[master 716d72e] Repurpose heroku-minima for alex-freberg-cv
+ 4 files changed, 28 insertions(+), 15 deletions(-)
+ rewrite templates/index.html (90%)
+(.venv) PS C:\Projects\alex-freberg-cv\heroku-minima> heroku create alex-freberg-cv
+>> 
+Creating ⬢ alex-freberg-cv... done
+https://alex-freberg-cv-204da870b90b.herokuapp.com/ | https://git.heroku.com/alex-freberg-cv.git
+(.venv) PS C:\Projects\alex-freberg-cv\heroku-minima> 
+
+## GIT BASH
+
+photi@TERZO-SECUNDUS MINGW64 /c/Projects/alex-freberg-cv/heroku-minima (master)
+$ git remote add spycebot https://github.com/spycebot/alex-freberg-cv.git
+
+photi@TERZO-SECUNDUS MINGW64 /c/Projects/alex-freberg-cv/heroku-minima (master)
+$
+
+## VSCode extension: GitHub Pull Requests Extension
+
+(.venv) PS C:\Projects\alex-freberg-cv\heroku-minima> git push spycebot master
