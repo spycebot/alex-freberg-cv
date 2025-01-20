@@ -151,7 +151,9 @@ li {
      */
 }
 
-
+#avatar {
+    border-radius: 50%;
+}
 
 .header_one {
     text-decoration: none;
@@ -163,14 +165,16 @@ li {
 }
 
 #occupation {
+    /*
     position: absolute;
-    top: -10px;
+    top: 0px;
     left: 0px;
+    */
 }
 
 #address {
     position: absolute;
-    top: -10px;
+    top: 0px;
     right: 0px;
     text-align: right;
 }
@@ -239,11 +243,11 @@ li {
     #footer {
       display: none;
     }
-      */
 
     #occupation {
         top: -10px;
     }
+      */
     
     #address {
         top: -10px;
