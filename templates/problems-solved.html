@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+<link rel="stylesheet" href="{{ url_for('static', filename='problems.css') }}">
+
+{% endblock %}
+
+{% block body %}
+
+<table>
+    <tr>
+        <th>Situation</th>
+        <th>Problem</th>
+        <th>Action</th>
+        <th>Result</th>
+        <th>Scope</th>
+    </tr>
+        <td>Candidate is jobless.</td>
+        <td>Submitting tailored job applications is time consuming and error prone.</td>
+        <td>Implement CV as Flask web app. Print CV to PDF after quick customization.</td>
+        <td>This important face-to-face.</td>
+        <td>Specific</td>
+    </tr>
+    <tr>
+        <td>Primark buyer has retail stock missing of a significant value.</td>
+        <td>Stock to me matched in Ceva system matching criteria from IPMS excluding order number.</td>
+        <td>Modify existing IPMS database lookup to display characteristic data for missing stock (size, color, count). Publish findings and updated query to own team.</td>
+        <td>Missing stock accounted for.</td>
+        <td>General</td>
+    </tr>
+    <tr>
+        <td>IPMS suffered frequent system outage during production hours. </td>
+        <td>Status of in-flight jobs had to be deterimined  manually after system restart.</td>
+        <td>Designed and developed Python desktop app to take screenshots of application admin interace, OCR the screenshots and provide text output of log data.</td>
+        <td>Time to application restart reduced by upwards of 80%; errror due to manual entry eliminated. Application success documented in successive monthly reports.</td>
+        <td>General</td>
+    </tr>
+    <tr>
+        <td>IPMS suffered frequent system outage during production hours. Status of in-flight jobs had to be deterimined for next steps.</td>
+        <td>IPMS back-end interface did not allow export or mouse pointer copy-paste.</td>
+        <td>Designed and developed Python desktop app to take screenshots of application admin interace, OCR the screenshots and provide text output of log data.</td>
+        <td>Time to announce restoration of system service reduced by upwards of 80%; errror due to manual entry eliminated. Application success documented in successive monthly reports.</td>
+        <td>General</td>
+    </tr>
+    <tr>
+        <td>Consistent translation </td>
+        <td>Human expert transliteration is error prone.</td>
+        <td>Created Python script to perform transliteration algorithmically. Provided superior quality output to customer.</td>
+        <td>Completed work for other agents who could not deliver. Provided superior quality output to customer. Not documented externally.</td>
+        <td>General</td>
+    </tr>
+    <td>Jobless</td>
+    <td>Profile</td>
+    <td>Accelerate and document findings.</td>
+    <td>This important face-to-face.</td>
+    <td>General</td>
+</tr>
+</table>
+{% endblock %}

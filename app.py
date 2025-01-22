@@ -74,5 +74,9 @@ def portfolio_data_engineer():
 def curriculum_vitae():
     return render_template('curriculum-vitae.html')
 
+@app.get('/problems-solved')
+def problems_solved():
+    return render_template('problems-solved.html')
+
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0')

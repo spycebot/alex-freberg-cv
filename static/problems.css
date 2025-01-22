@@ -1,0 +1,28 @@
+/* Terzo Styles for Index Page */
+
+body {
+    font-size: 200%;
+}
+
+table, th, td {
+    font-family: "Share Tech Mono", serif;
+    font-weight: 400;
+    font-style: normal;   
+}
+
+table {
+    border: 1px solid black;
+    text-shadow: 4px;
+}
+
+th {
+    border: 1px solid red;
+    text-shadow: 4px;
+    font-size: 60%;
+}
+
+td {
+    border: 1px solid blue;
+    text-shadow: 4px;
+    font-size: 60%;
+}
