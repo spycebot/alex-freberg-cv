@@ -15,7 +15,7 @@ body {
 
 p {
     /* font-family: "Share Tech Mono", monospace; */
-    font-family: "Smooch Sans", serif;
+    font-family: "Smooch Sans", monospace;
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
@@ -24,7 +24,7 @@ p {
 }
 
 a {
-    font-family: "Smooch Sans", serif;
+    font-family: "Smooch Sans", monospace;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
@@ -32,7 +32,7 @@ a {
 }
 
 button  {
-    font-family: "Smooch Sans", serif;
+    font-family: "Smooch Sans", monospace;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
@@ -40,7 +40,7 @@ button  {
 }
 
 h1, h2, h3 {   
-    font-family: "Rowdies", serif;
+    font-family: "Rowdies", sans-serif;
     font-weight: 500;
     font-style: normal;
 }
@@ -68,7 +68,7 @@ ul {
 }
 
 li {
-    font-family: "Smooch Sans", serif;
+    font-family: "Smooch Sans", monospace;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
@@ -173,13 +173,6 @@ li {
     */
 }
 
-#address {
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    text-align: right;
-}
-
 #address span {
     display: block;
 }
@@ -231,6 +224,14 @@ li {
     #avatar {
         width : 512px;
     }
+    
+
+    #address {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        text-align: right;
+    }
 }
 
 @media print {
@@ -249,8 +250,12 @@ li {
         top: -10px;
     }
       */
-    
+
     #address {
+        position: absolute;
+        /* top: 0px; */
+        right: 0px;
+        text-align: right;
         top: -5px;
     }
 }
