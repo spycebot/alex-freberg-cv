@@ -57,11 +57,33 @@
         <td>Completed work for other agents who could not deliver. Provided superior quality output to customer. Not documented externally.</td>
         <td>General</td>
     </tr>
-    <td>Jobless</td>
-    <td>Profile</td>
-    <td>Accelerate and document findings.</td>
-    <td>This important face-to-face.</td>
-    <td>General</td>
-</tr>
-</table>
+    <tr>
+        <td>Publishing secure website from Heroku</td>
+        <td>For security validation in all major browsers, DNS targets, ANAME, ALIAS and CNAME forwarding rules must be correct.</td>
+        <td>Heroku LetsEncrypt certificates are verified in Heroku Admin UI; DNS proxies and SNI targets are verified on the command line. DNS targets are verified with <code>dig</code> and <code>host</code> Linux command line queries. Authoritative DNS records are set in registration service and third party DNS service.</td>
+        <td>
+            Security validation in all major browsers can be set by pointing.
+            <ul>
+                <li>Base domain name ALIAS record to unsecured Heroku DNS target</li>
+                <li>www domain name ALIAS record to secured Heroku DNS target</li>
+                <li>NOT www domain name CNAME record to Heroku App target</li>
+            </ul>
+        </td>
+        <td>General</td>
+    </tr>
+    <tr>
+        <td>Jobless</td>
+        <td>Profile</td>
+        <td>Accelerate and document findings.</td>
+        <td>This important face-to-face.</td>
+        <td>General</td>
+    </tr>
+    </table>
+
+<h3>Database Management Applications</h3>
+<ul>
+    <li>IBM DB2 ACS</li>
+    <li>PostgreSQL 17 pgAdmin 4</li>
+    <li>Microsoft SQL Server Management Studio 20</li>
+</ul>
 {% endblock %}
