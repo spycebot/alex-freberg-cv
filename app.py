@@ -74,6 +74,11 @@ def portfolio_data_engineer():
 def curriculum_vitae():
     return render_template('curriculum-vitae.html')
 
+
+@app.get('/portfolio')
+def portfolio():
+    return render_template('portfolio-data-engineer.html')
+
 @app.get('/problems-solved')
 def problems_solved():
     return render_template('problems-solved.html')
@@ -81,6 +86,10 @@ def problems_solved():
 @app.get('/barista')
 def barista():
     return render_template('barista.html')
+
+@app.get('/one-page-javascript')
+def one_page_javascript():
+    return render_template('one-page-javascript.html')
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0')

@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+<link rel="stylesheet" href="{{ url_for('static', filename='portfolio.css') }}">
+
+{% endblock %}
+
+{% block body %}
+
+<section class="columnar">
+    <p>In the abstract, rest assured that a problem was solved.</p>
+
+    <h2>JavaScript One Page</h2>
+    <p>JavaScript operates in the space</p>
+
+    <h3>Concepts</h3>
+
+    <p>
+        let carName; // undefined <br />
+        Variables defined with var are hoisted to the top, meaning you can use the variable before it is declared.<br />
+        Use const when you declare:<br />
+    </p>
+
+    <ul>
+        <li>A new Array</li>
+        <li>A new Object</li>
+        <li>A new Function</li>
+        <li>A new RegExp</li>
+    </ul>
+
+    <h3>Methods</h3>
+
+    <p>
+        const myArray = text.split(" ", 3);<br />
+        let result = text.slice(0, 5);<br />
+        let result = text.substring(1, 4);<br />
+        let result = text.substr(1, 4);<br />
+    </p>
+
+
+
+    <h3>Loops</h3>
+
+    <h3>DOM</h3>
+
+    <p>
+        document.getElementById("demo").innerHTML = "Hello JavaScript";<br />
+        document.getElementById("demo").style.fontSize = "35px";<br />
+        document.getElementById("demo").style.display = "none";<br />
+    </p>
+</section>
+
+{% endblock %}

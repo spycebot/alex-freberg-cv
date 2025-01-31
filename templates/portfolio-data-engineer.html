@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+<link rel="stylesheet" href="{{ url_for('static', filename='portfolio.css') }}">
+
+{% endblock %}
+
+{% block body %}
+
+<p>In the abstract, rest assured that a problem was solved.</p>
+
+<h2>Problem [Introduction]</h2>
+<p>Manual data pipelines have a negative impact on findings reproducibility. Data analysts have a professional requirement to reproduce findings.
+    While convenient in many contexts, relying the graphical user interface (GUI) to reproduce data analytical findings poses problems for the analyst.
+    The solution proposed here is the utilisation of scripts to resolve the problems emposed by reliance on the GUI.
+
+</p>
+
+<p>Why is this topic important? Why should anyone care?</p>
+<p>Why is the weakness of what has been done before? What is missing? Cite the existing studies.</p>
+<p>What is the value that your study brings to the table. What gaps are you filling?</p>
+
+<h3>Data [Methods]</h3>
+
+<p>Alex Freberg's manual load</p>
+
+<p>Demonstrate data load pipelines.</p>
+
+<h3>Analysis [Results]</h3>
+
+<p>Metric comparision of data load pipelines</p>
+
+<p>Describe in order all tables, figures and key findings.</p>
+
+<h3>Discussion [Conclusion]</h3>
+
+<p>We have demonstrated the reproducibility of data load findings... no.</p>
+
+<p>Recapitulate findings.</p>
+
+<p>Limitations: List all limitations.</p>
+
+<p>What are the implications for future research?</p>
+
+<p>what are the implications, if any, for policy, intervention, or other action in your field.</p>
+
+{% endblock %}
