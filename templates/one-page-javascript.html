@@ -29,6 +29,12 @@
         <li>A new RegExp</li>
     </ul>
 
+    <p>
+        Iterables must implement the Symbol.iterator method.
+        String, Array, TypedArray, Map and Set are all iterables. 
+        Their prototype objects have a Symbol.iterator method.
+    </p>
+
     <h3>Methods</h3>
 
     <p>
@@ -36,11 +42,31 @@
         let result = text.slice(0, 5);<br />
         let result = text.substring(1, 4);<br />
         let result = text.substr(1, 4);<br />
+        x.toString()<br />
+        (123).toString()<br />
+        (100 + 23).toString() <br />
+        Number() 	Returns a number, converted from its argument <br />
+        parseFloat() 	Parses a string and returns a floating point number <br />
+        parseInt() 	Parses a string and returns an integer <br />
+        typeof "John Doe"  <br />
+        typeof (3 + 4)  <br />
     </p>
 
 
 
     <h3>Loops</h3>
+
+    <pre>
+    for (variable of iterable) {
+        // code block to be executed
+      } 
+    </pre>
+    <pre>
+    const letters = new Set(["a","b","c"]);
+
+    for (const x of letters) {
+        // code block to be executed
+    }
 
     <h3>DOM</h3>
 

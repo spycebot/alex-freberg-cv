@@ -177,14 +177,8 @@ li {
     display: block;
 }
 
-#skills_left {
-    float: left;
-    width: 50%;
-}
-
-#skills_right {
-    float: right;
-    width: 50%;
+#skills {
+    column-count: 2;
 }
 
 /* Handset */
