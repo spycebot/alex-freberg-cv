@@ -91,5 +91,13 @@ def barista():
 def one_page_javascript():
     return render_template('one-page-javascript.html')
 
+@app.get('/one-page-sql')
+def one_page_sql():
+    return render_template('one-page-sql.html')
+
+@app.get('/one-page-csharp')
+def one_page_csharp():
+    return render_template('one-page-csharp.html')
+
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0')
