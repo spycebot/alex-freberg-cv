@@ -1,0 +1,140 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+<link rel="stylesheet" href="{{ url_for('static', filename='portfolio.css') }}">
+
+{% endblock %}
+
+{% block body %}
+
+<section class="columnar">
+    <p>In the abstract, rest assured that a problem was solved.</p>
+
+    <h2>C# (C Sharp) One Page</h2>
+    <p>C# operates. This one page presents points to bear in mind when entering a technical exam.</p>
+
+    <h3>Concepts</h3>
+
+    <p>
+        <span>Generic Programming: </span>Write code that handles a collection "in
+        the general" and C# handles the specifics for each different type of
+        collection.
+    </p>
+
+    <p>
+        <span>Functional Programming: </span>
+        Specify what you want to accomplish in a task, but not how to accomplish it.
+    </p>
+
+    <p>
+        Collectively, .NET's predefined namespaces are known as the .NET Framework
+Class Library
+    </p>
+    <p>A class name is an identifier.</p>
+    <p>
+        String Interpolation: Enables you to insert values in string literals to create formatted strings.
+        An interpolated string must begin with a $ (dollar sign).
+    </p>
+    <p>
+        C# is an extensible programming language becasuse Each class you create becomes a new type you can use to
+        create objects.
+    </p>
+    <p>Member access operator (.)</p>
+    <p>Expression body definition: 
+        <pre>
+    member => expression;
+        </pre>
+        Another form for this same token is the lambda expression lambda operator, where it  separates the input parameters on the left side from the lambda body on the right side.
+    </p>
+    <h3>Boilerplate</h3>
+    <pre>
+using System;
+
+class SquareRootTest
+using System;
+
+class SquareRootTest
+{
+   static void Main(string[] args)
+   {
+      var continueLoop = true;
+
+      do
+      {
+         try
+         {
+            continueLoop = false;
+         }
+         catch (Exception specificException)
+         {
+            Console.WriteLine("\n" + specificException.Message);
+         }
+      } while (continueLoop);
+   }
+
+   public static double SquareRoot(double value)
+   {
+      if (value < 0)
+      {
+         throw new Exception(
+            "Unpermitted action performed.");
+      }
+      else
+      {
+         return Math.Sqrt(value); // compute square root
+      }
+   }
+}
+    </pre>
+
+    <h3>Methods</h3>
+
+    <p>
+
+    </p>
+
+
+
+    <h3>Loops</h3>
+
+
+
+    <h3>Unicode Console Characters</h3>
+
+    <p>
+        My favourite part!
+    </p>
+    <pre>
+DateTime currentTime = DateTime.Now;
+Console.OutputEncoding = System.Text.Encoding.UTF8;
+    </pre>
+    <table>
+        <tr>
+            <th>Format Specifier</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>C or c</td>
+            <td>Formats for currency</td>
+        </tr>
+        <tr>
+            <td>D or d</td>
+            <td>Formats for whole number</td>
+        </tr>
+        <tr>
+            <td>N or n</td>
+            <td>Formats with thousands separator</td>
+        </tr>
+        <tr>
+            <td>E or e</td>
+            <td>Formats for scientific notation</td>
+        </tr>
+        <tr>
+            <td>C or c</td>
+            <td>Formats with fixed number of decimals</td>
+        </tr>
+    </table>
+</section>
+
+{% endblock %}

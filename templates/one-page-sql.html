@@ -1,0 +1,92 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+<link rel="stylesheet" href="{{ url_for('static', filename='portfolio.css') }}">
+
+{% endblock %}
+
+{% block body %}
+
+<section class="columnar">
+    <p>In the abstract, rest assured that a problem was solved.</p>
+
+    <h2>SQL One Page</h2>
+    <p>This one page presents points to bear in mind when entering a technical exam.</p>
+
+    <h3>Concepts</h3>
+    <p>SQL operates in a variety of environments, including the script engine of the underlying database, an IDE, or a specialised external tool for interacting with a database.  </p>
+
+
+
+    <h3>Methods</h3>
+
+    <pre>
+CREATE TABLE EmployeeSalary
+(EmployeeID int,
+JobTitle varchar(50),
+Salary int
+)
+
+INSERT INTO EmployeeDemographics VALUES
+(1001, 'Jim', 'Halpert', 30, 'Male')
+    </pre>
+
+    <h3>HAVING</h3>
+
+    <pre>
+SELECT JobTitle, AVG(Salary) AverageSalary
+FROM EmployeeDemographics
+JOIN EmployeeSalary
+    ON EmployeeDemographics.EmployeeID = 
+    EmployeeSalary.EmployeeID
+GROUP BY JobTitle
+HAVING AVG(Salary) > 45000
+ORDER BY AVG(Salary)
+    </pre>
+
+
+    <h3>Temp Tables</h3>
+
+    <pre>
+CREATE TABLE #temp_Employee2 (
+JobTitle varchar(50),
+EmployeesPerJob int,
+AvgAge int,
+AvgSalary int
+)
+
+INSERT INTO #temp_Employee2
+SELECT JobTitle, COUNT(JobTitle), AVG(Age), AVG(Salary)
+FROM EmployeeDemographics emp
+JOIN EmployeeSalary sal
+	ON emp.EmployeeID = sal.EmployeeID
+GROUP BY JobTitle
+
+Select * FROM #TEMP_EMPLOYEE2
+    </pre>
+
+
+    <h3>CTE</h3>
+
+    <p>Common Table Expressions can be used multiple times within the subsequent query.</p>
+    <pre>
+CREATE TABLE #temp_Employee2 (
+JobTitle varchar(50),
+EmployeesPerJob int,
+AvgAge int,
+AvgSalary int
+)
+
+INSERT INTO #temp_Employee2
+SELECT JobTitle, COUNT(JobTitle), AVG(Age), AVG(Salary)
+FROM EmployeeDemographics emp
+JOIN EmployeeSalary sal
+	ON emp.EmployeeID = sal.EmployeeID
+GROUP BY JobTitle
+
+Select * FROM #TEMP_EMPLOYEE2
+    </pre>
+</section>
+
+{% endblock %}
