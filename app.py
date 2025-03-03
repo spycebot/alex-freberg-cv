@@ -100,4 +100,4 @@ def one_page_csharp():
     return render_template('one-page-csharp.html')
 
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0')
+    app.run() # debug=True, host='0.0.0.0'
