@@ -30,20 +30,20 @@ The way ahead is as follows.
 
 Snapshot of environment 04 MAR 2025:
 
-Package      Version
------------- -------
-blinker      1.8.2  
-click        8.1.7  
-colorama     0.4.6  
-Flask        3.0.3  
-gunicorn     22.0.0 
-itsdangerous 2.2.0  
-Jinja2       3.1.4  
-MarkupSafe   2.1.5  
-packaging    24.0   
-pip          24.0   
-setuptools   58.1.0 
-Werkzeug     3.0.3  
+| Package      | Version    | 
++----------- -------
+| blinker      | 1.8.2      | 
+| click        | 8.1.7      | 
+| colorama     | 0.4.6      | 
+| Flask        | 3.0.3      | 
+| gunicorn     | 22.0.0     | 
+| itsdangerous | 2.2.0      | 
+| Jinja2       | 3.1.4      | 
+| MarkupSafe   | 2.1.5      | 
+| packaging    | 24.0       | 
+| pip          | 24.0       | 
+| setuptools   | 58.1.0     | 
+| Werkzeug     | 3.0.3      | 
 
 
 ### Analysis
