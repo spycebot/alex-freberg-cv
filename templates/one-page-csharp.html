@@ -41,64 +41,69 @@ Class Library
         create objects.
     </p>
     <p>Member access operator (.)</p>
-    <p>Expression body definition: 
+    <p>Expression body definition: </p>
         <pre>
-    member => expression;
-        </pre>
+    member => expression;</pre>
+        <p>
         Another form for this same token is the lambda expression lambda operator, where it  separates the input parameters on the left side from the lambda body on the right side.
     </p>
     <h3>Boilerplate</h3>
     <pre>
-using System;
+    using System;
 
-class SquareRootTest
-using System;
+    class SquareRootTest
+    using System;
 
-class SquareRootTest
-{
-   static void Main(string[] args)
-   {
-      var continueLoop = true;
+    class SquareRootTest {
+        static void Main(string[] args) {
+            var continueLoop = true;
 
-      do
-      {
-         try
-         {
-            continueLoop = false;
-         }
-         catch (Exception specificException)
-         {
-            Console.WriteLine("\n" + specificException.Message);
-         }
-      } while (continueLoop);
-   }
+            do {
+                try {
+                    continueLoop = false;
+                } catch (Exception specificException) {
+                    Console.WriteLine("\n" + specificException.Message);
+                }
+            } while (continueLoop);
+        }
 
-   public static double SquareRoot(double value)
-   {
-      if (value < 0)
-      {
-         throw new Exception(
-            "Unpermitted action performed.");
-      }
-      else
-      {
-         return Math.Sqrt(value); // compute square root
-      }
-   }
-}
-    </pre>
+        public static double SquareRoot(double value) {
+            if (value < 0) {
+                throw new Exception("Unpermitted action performed.");
+            } else {
+                return Math.Sqrt(value); // compute square root
+            }
+        }
+    }</pre>
 
     <h3>Methods</h3>
 
-    <p>
+        <pre>
+    string s = "You win some. You lose some.";
 
-    </p>
+    string[] subs = s.Split(' ');
+
+    foreach (var sub in subs)
+    {
+        Console.WriteLine($"Substring: {sub}");
+    }</pre>
 
 
 
     <h3>Loops</h3>
 
+        <pre>
+    private decimal TotalFees()
+    {
+        decimal total = 0;
 
+        foreach (Record rec in recordsList)
+        {
+            total += rec.CourseFee;
+        }
+
+        return total;
+    }</pre>
 
     <h3>Unicode Console Characters</h3>
 
@@ -106,9 +111,8 @@ class SquareRootTest
         My favourite part!
     </p>
     <pre>
-DateTime currentTime = DateTime.Now;
-Console.OutputEncoding = System.Text.Encoding.UTF8;
-    </pre>
+    DateTime currentTime = DateTime.Now;
+    Console.OutputEncoding = System.Text.Encoding.UTF8;</pre>
     <table>
         <tr>
             <th>Format Specifier</th>

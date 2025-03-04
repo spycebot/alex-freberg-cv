@@ -9,8 +9,8 @@ body {
     font-size: 100%;
     color : black;
     background-color: white;
-    margin: 0 4px;
-    padding: 0 4px;
+    margin: 0;
+    padding: 0;
 }
 
 p {
@@ -59,7 +59,7 @@ h2 {
 
 h2, h3 {
     border-bottom: 1px solid gray;
-
+    max-width: 50%;
 }
 
 ul {
@@ -109,13 +109,14 @@ li {
   }
 
 #banner {
-    /* position: sticky;
+    position: sticky;
     top: 0;
     background-color: #c4f4ff;
     border-bottom: 2px solid grey;
     width: 100%;
     margin : 0;
     padding : 5px;
+    /*
     box-shadow: 0 0 24px #000;
     background-image: linear-gradient(#fff, #fff, #fff, #ccc); */
 }
@@ -133,19 +134,18 @@ li {
     bottom: 0;
     width: 100%;
     text-align: center;
-    padding : 5px;
+    padding : 5px 0px;
     background-color: white;
     border-top: 2px solid grey;
-    background-image: linear-gradient(#ccc, #fff, #fff, #fff);
-    display: none;
+    /* background-image: linear-gradient(#ccc, #fff, #fff, #fff); */
 }
 
 #content {
     /* background-color: rgb(177, 237, 187);
     height: 100%;
     width: 100%; */
-    margin: 0px;
-    padding: 0px;
+    margin: 5px;
+    padding: 5px;
     /* box-shadow: .5em 0em 2em #000 inset,
                 -.5em 0em 2em #000 inset;
     background-image: linear-gradient(90deg, #ccc, #fff, #fff, #fff, #ccc) ;
@@ -189,7 +189,7 @@ li {
     
 
     #avatar {
-        width : 128px;
+        width : 256px;
     }
 }
 
@@ -200,7 +200,7 @@ li {
     }
 
     #avatar {
-        width : 256px;
+        width : 384px;
     }
 }
 
@@ -234,12 +234,18 @@ li {
       margin: 0;
       padding: 0;
     }
+
+    #banner {
+        
+        background-color: none;
+        border-bottom: none;
+    }
     
-    /*
     #footer {
       display: none;
     }
 
+        /*
     #occupation {
         top: -10px;
     }

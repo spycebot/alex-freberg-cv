@@ -31,7 +31,7 @@ The way ahead is as follows.
 Snapshot of environment 04 MAR 2025:
 
 | Package      | Version    | 
-+----------- -------
+| ----------   | -------    | 
 | blinker      | 1.8.2      | 
 | click        | 8.1.7      | 
 | colorama     | 0.4.6      | 

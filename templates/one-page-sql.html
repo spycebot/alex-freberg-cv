@@ -26,14 +26,13 @@ CREATE TABLE EmployeeSalary
 (EmployeeID int,
 JobTitle varchar(50),
 Salary int
-)
+);
 
 INSERT INTO EmployeeDemographics VALUES
-(1001, 'Jim', 'Halpert', 30, 'Male')
-    </pre>
+(1001, 'Jim', 'Halpert', 30, 'Male');</pre>
 
     <h3>HAVING</h3>
-
+        <p>Condition the selection on values in columns.</p>
     <pre>
 SELECT JobTitle, AVG(Salary) AverageSalary
 FROM EmployeeDemographics
@@ -42,29 +41,40 @@ JOIN EmployeeSalary
     EmployeeSalary.EmployeeID
 GROUP BY JobTitle
 HAVING AVG(Salary) > 45000
-ORDER BY AVG(Salary)
-    </pre>
+ORDER BY AVG(Salary)</pre>
 
+    <h3>UPDATE</h3>
+        <p>Make data changes to existing records.</p>
+    <pre>
+UPDATE Students2 
+SET email = LOWER(CONCAT(FirstName, '.', LastName, '@CENITCOLLEGE.com'));</pre>
+
+    <h3>USE</h3>
+        <p>Switch between databases from script.</p>
+    <pre>
+USE db1;
+USE Northwind;
+SELECT * 
+FROM Employees;</pre>
 
     <h3>Temp Tables</h3>
-
+        <p>Valid until the end of the studio session.</p>
     <pre>
 CREATE TABLE #temp_Employee2 (
 JobTitle varchar(50),
 EmployeesPerJob int,
 AvgAge int,
 AvgSalary int
-)
+);
 
 INSERT INTO #temp_Employee2
 SELECT JobTitle, COUNT(JobTitle), AVG(Age), AVG(Salary)
 FROM EmployeeDemographics emp
 JOIN EmployeeSalary sal
 	ON emp.EmployeeID = sal.EmployeeID
-GROUP BY JobTitle
+GROUP BY JobTitle;
 
-Select * FROM #TEMP_EMPLOYEE2
-    </pre>
+Select * FROM #TEMP_EMPLOYEE2;</pre>
 
 
     <h3>CTE</h3>
@@ -76,17 +86,16 @@ JobTitle varchar(50),
 EmployeesPerJob int,
 AvgAge int,
 AvgSalary int
-)
+);
 
 INSERT INTO #temp_Employee2
 SELECT JobTitle, COUNT(JobTitle), AVG(Age), AVG(Salary)
 FROM EmployeeDemographics emp
 JOIN EmployeeSalary sal
 	ON emp.EmployeeID = sal.EmployeeID
-GROUP BY JobTitle
+GROUP BY JobTitle;
 
-Select * FROM #TEMP_EMPLOYEE2
-    </pre>
+Select * FROM #TEMP_EMPLOYEE2;</pre>
 </section>
 
 {% endblock %}
