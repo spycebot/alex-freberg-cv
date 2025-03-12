@@ -20,7 +20,40 @@
     <p>An attribute is stored for an entity, and corresponds to a field. Ab attribute cab ibkt appear in one entity, unless it is the key attribute in another entity.</p>
     <p>A relationship is established by a foreign key in one entity linking to the primary key in another.</p>
 
+    <p>Order of Precedence in SQL: When combining multiple logical operators, SQL follows a specific order of precedence to determine how conditions are evaluated:</p>
+    <ol>
+        <li>NOT (Highest precedence)</li>
+        <li>AND</li>
+        <li>OR (Lowest precedence)</li>
+    </ol>    
 
+    <p>Order of Clauses</p>
+    <ol>
+        <li>SELECT</li>
+        <li>FROM</li>
+        <li>WHERE</li>
+        <li>GROUP BY</li>
+        <li>HAVING</li>
+        <li>ORDER BY</li>
+    </ol>    
+
+    <img src="https://www.sisense.com/wp-content/uploads/2024/07/image-1-order-blog.jpg" />
+
+    <img src="https://www.kdnuggets.com/wp-content/uploads/ferrer_essential_guide_sql_execution_order_3.png" />
+
+    <p>Grouping Rules</p>
+    <ul>
+        <li>Every non-aggregate column that appears in the SELECT clause must also
+            appear in the GROUP BY clause.</li>
+        <li>You may not use aliases in the HAVING clause.</li>
+        <li>You may use aliases in the ORDER BY clause.</li>
+        <li>You may only use calculated fields in the HAVING clause.</li>
+        <li>You may use calculated field aliases or actual fields in the ORDER BY clause.</li>
+    </ul>    
+        
+        
+        
+    
 
     <h3>Methods</h3>
 

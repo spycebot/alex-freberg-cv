@@ -17,3 +17,7 @@ pre {
     border: 1px solid #808080;
     padding: 8px 4px; 
 }
+
+img {
+    width: 60%;
+}

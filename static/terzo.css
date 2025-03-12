@@ -141,15 +141,8 @@ li {
 }
 
 #content {
-    /* background-color: rgb(177, 237, 187);
-    height: 100%;
-    width: 100%; */
     margin: 5px;
     padding: 5px;
-    /* box-shadow: .5em 0em 2em #000 inset,
-                -.5em 0em 2em #000 inset;
-    background-image: linear-gradient(90deg, #ccc, #fff, #fff, #fff, #ccc) ;
-     */
 }
 
 #avatar {
@@ -163,18 +156,6 @@ li {
 .resize {
     width: 400px;
     height: auto;
-}
-
-#occupation {
-    /*
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    */
-}
-
-#address span {
-    display: block;
 }
 
 #skills {
@@ -218,14 +199,6 @@ li {
     #avatar {
         width : 512px;
     }
-    
-
-    #address {
-        position: absolute;
-        top: 0px;
-        right: 0px;
-        text-align: right;
-    }
 }
 
 @media print {
@@ -243,19 +216,5 @@ li {
     
     #footer {
       display: none;
-    }
-
-        /*
-    #occupation {
-        top: -10px;
-    }
-      */
-
-    #address {
-        position: absolute;
-        /* top: 0px; */
-        right: 0px;
-        text-align: right;
-        top: -5px;
     }
 }

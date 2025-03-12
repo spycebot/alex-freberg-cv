@@ -115,5 +115,9 @@ def context_preprocessor():
     # see https://artandhacks.se/articles/flask-markdown/ for {{stringOfMarkdown|safe}}
     return dict(text=text, markdown=markdown.markdown)
 
+@app.get('/resume-sql')
+def resume_sql():
+    return render_template('resume-sql.html')
+
 if __name__ == '__main__':
     app.run() # debug=True, host='0.0.0.0'

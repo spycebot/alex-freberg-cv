@@ -1,36 +1,34 @@
 {% extends 'base.html' %}
 
 {% block head %}
-<title>Shannon Douglas Ware - CV - Curriculum Vitae</title>
-<link rel="stylesheet" href="{{ url_for('static', filename='cv.css') }}">
+<title>Shannon Douglas Ware - Resume - SQL Developer</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='resume.css') }}">
 
 {% endblock %}
 
 {% block body %}
 
-<p id="occupation">Curriculum Vitae</p>
 <p id="address">
     <span>Mobile: 083-441-0345 | photius@shannonware.com</span>
     <span>The Shop, Gerahies, Bantry, Co. Cork P75 AK37, Ireland</span>
-    <span>https://www.shannonware.com</span>
-    <!-- span>https://www.terzotechnical.com</span -->
-    <span>https://github.com/spycebot/</span>
+    <span>https://www.shannonware.com | https://www.terzotechnical.com | https://github.com/spycebot/</span>
 </p>
-<p>Shannon has a demonstrated ability reduce cost while improving production service quality.</p>
-<!-- p>Shannon has a deep knowledge of industry analytical tools and methods including open source (Python) integration with proprietary tools (Microsoft).</p -->
-<h2>Skills</h2>
-<section id="skills">
+<h2>Personal Profile</h2>
+<p>A demonstrated ability reduce cost while improving production service quality.
+A deep knowledge of industry analytical tools and methods including open source (Python, .NET) integration with proprietary tools (SQL Server, Oracle, Tableau).
+Articulate and talented native English speaker, with a strong track record of leading meetings, teams and projects.
+Seeking the opportunity to do maths, analysis, data science and computer science on a daily basis.
+Seeking a reputable employer on a growth trajectory, with whom we can have a mutually beneficial relationship for years to come.</p>
+<h3>Key Skills</h3>
+<section>
         <ul>
-            <li>C#: 6-8, LINQ, Visual Studio, Git, CI/CD</li>
-            <li>Python: JSON, Flask, Heroku, Hugging Face, Pandas</li>
-            <li>JavaScript: JSON, Node.js, Angular, REACT, ES6</li>
-            <li>SQL: Integrations, PostgreSQL, SQLite, SSMS</li>
-            <li>XP, Code Profiling, Agile methodologies, OOP, High velocity IT</li>
-            <li>Google: Cloud, Analytics, Workspaces, Android</li>
-            <li>Linux: Lubuntu, CentOS, Debian, Node.js, VS Code for Linux</li>
-            <li>Microsoft: RDP, Azure, Office, Excel, Word, Team, PowerPoint</li>
-            <li>SQL Server 2022, SQL Server Management Studio, Office365</li>
-            <li>OBS, Audacity, Davinci Resolve, PyAudio</li>
+            <li>.NET: 6-8, Visual Studio, VS Code, C#, LINQ, RDP</li>
+            <li>SQL: SQL Server 2022, SQL Server Management Studio, T-SQL, Oracle, MySQL, PostgreSQL</li>
+            <li>Open Source: JavaScript ES6, JSON, Linux (Lubuntu, CentOS, Debian), Node.js, VS Code for Linux, React</li>
+            <li>Python: Websockets, Flask, Heroku, Hugging Face, Pandas</li>
+            <li>SDLS: Git, CI/CD, XP, Code Profiling, Waterfall, Agile, OOP, High velocity IT</li>
+            <li>Cloud: Google, Azure CLI, AWS, IBM, Heroku CLI, OVH</li>
+            <li>Productivity: Office, Excel, Word, Team, PowerPoint, OBS, Audacity, Davinci Resolve, PyAudio</li>
         </ul>
 </section>
 <h3>Projects</h3>
@@ -209,24 +207,26 @@
     <li>Japanese work environment teamwork exercises</li>
 </ul>
 
-<h3>Certifications</h3>
-<p>Ireland Driving License: Category B</p>
-<p class="optional_guru optional_support optional_it">ITIL4 High Velocity IT, May 2023</p>
-<p class="optional_support">ITIL4 Foundation, October 2022</p>
-<p class="optional_guru optional_support optional_it">Azure Data Fundamentals June 2022</p>
-<p class="optional_out">Azure Fundamentals, March 2020</p>
+<div id="epilogue" class="two-column">
+    <h3>Certifications</h3>
+    <p>ITIL4 High Velocity IT, May 2023</p>
+    <p>ITIL4 Foundation, October 2022</p>
+    <p>Azure Data Fundamentals June 2022</p>
+    <p>Azure Fundamentals, March 2020</p>
+    <p>Ireland Driving License: Category B</p>
 
-<h3>Languages</h3>
+    <h3>Languages</h3>
 
-<p>
-    English: Native speaker, university graduate, copywriter
-</p>
-<p>
-    Japanese: Fluent, proofreading, business correspondence
-</p>
-<p>
-    German: A2 equivalent
-</p>
+    <p>
+        English: Native speaker, university graduate, copywriter
+    </p>
+    <p>
+        Japanese: Fluent, proofreading, business correspondence
+    </p>
+    <p>
+        German: A2 equivalent
+    </p>
+</div>
 
 
 {% endblock %}

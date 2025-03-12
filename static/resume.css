@@ -1,0 +1,51 @@
+/*
+    cv.css
+    Terzo styles for site
+    by Terzo Technical
+    Copyright (c) 2025 Shannon Ware
+*/
+
+#address span {
+    display: block;
+}
+
+/* Handset */
+@media all and (min-width: 0px) and (max-width: 480px) {
+    /*
+
+    */
+}
+
+/* Tablet */
+@media all and (min-width: 481px) and (max-width: 800px) {
+    /*
+
+    */
+}
+
+/* Desktop */
+@media only screen and (min-width:801px) {
+    /*
+    #address {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        text-align: right;
+    }
+        */
+}
+
+@media print {
+    /*
+    #address {
+        position: absolute;
+        right: 0px;
+        text-align: right;
+        top: -5px;
+    }
+    */
+    
+    .two-column {
+        column-count: 2;
+    }
+}
