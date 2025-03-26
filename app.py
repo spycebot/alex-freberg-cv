@@ -119,5 +119,9 @@ def context_preprocessor():
 def resume_sql():
     return render_template('resume-sql.html')
 
+@app.get('/articles/flask-heroku')
+def article_flask_heroku():
+    return render_template('article-flask-heroku.html')
+
 if __name__ == '__main__':
     app.run() # debug=True, host='0.0.0.0'

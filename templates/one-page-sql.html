@@ -67,6 +67,10 @@ Salary int
 INSERT INTO EmployeeDemographics VALUES
 (1001, 'Jim', 'Halpert', 30, 'Male');</pre>
 
+    <h3>SELECT TOP</h3>
+
+    <pre>SELECT TOP 5 * FROM Orders</pre>
+
     <h3>HAVING</h3>
         <p>Condition the selection on values in columns.</p>
     <pre>
@@ -110,7 +114,7 @@ JOIN EmployeeSalary sal
 	ON emp.EmployeeID = sal.EmployeeID
 GROUP BY JobTitle;
 
-Select * FROM #TEMP_EMPLOYEE2;</pre>
+SELECT * FROM #TEMP_EMPLOYEE2;</pre>
 
 
     <h3>CTE</h3>
@@ -131,7 +135,7 @@ JOIN EmployeeSalary sal
 	ON emp.EmployeeID = sal.EmployeeID
 GROUP BY JobTitle;
 
-Select * FROM #TEMP_EMPLOYEE2;</pre>
+SELECT * FROM #TEMP_EMPLOYEE2;</pre>
 </section>
 
 {% endblock %}
