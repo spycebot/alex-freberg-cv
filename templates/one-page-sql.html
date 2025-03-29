@@ -97,6 +97,15 @@ USE Northwind;
 SELECT * 
 FROM Employees;</pre>
 
+<h3>ALTER</h3>
+<pre>ALTER TABLE Employees ADD PhoneNumber VARCHAR(15);
+-- Modifying a Column:
+ALTER TABLE Employees ALTER COLUMN Salary DECIMAL(12,2);
+-- Dropping a Column:
+ALTER TABLE Employees DROP COLUMN PhoneNumber;
+-- Dropping a Table
+DROP TABLE Employees;</pre>
+
     <h3>Temp Tables</h3>
         <p>Valid until the end of the studio session.</p>
     <pre>
