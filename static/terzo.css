@@ -15,7 +15,7 @@ body {
 
 p {
     /* font-family: "Share Tech Mono", monospace; */
-    font-family: "Smooch Sans", monospace;
+    font-family: "Smooch Sans", "Franklin Gothic Book", monospace;
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
@@ -24,7 +24,7 @@ p {
 }
 
 a {
-    font-family: "Smooch Sans", monospace;
+    font-family: "Smooch Sans", "Franklin Gothic Book", monospace;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
@@ -40,7 +40,7 @@ button  {
 }
 
 h1, h2, h3 {   
-    font-family: "Rowdies", sans-serif;
+    font-family: "Rowdies", "Segoe UI Black", sans-serif;
     font-weight: 500;
     font-style: normal;
 }
@@ -63,7 +63,7 @@ ul {
 }
 
 li, td {
-    font-family: "Smooch Sans", monospace;
+    font-family: "Smooch Sans", "Franklin Gothic Book", monospace;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
@@ -106,7 +106,7 @@ li, td {
 #banner {
     position: sticky;
     top: 0;
-    background-color: #c4f4ff;
+    background-color: #fff;
     border-bottom: 2px solid grey;
     width: 100%;
     margin : 0;
@@ -213,10 +213,16 @@ li, td {
       padding: 0;
     }
 
+    /*
     #banner {
         
         background-color: none;
         border-bottom: none;
+    }
+    */
+    
+    h1, h2, h3 {
+        max-width: 100%;
     }
     
     #footer {
