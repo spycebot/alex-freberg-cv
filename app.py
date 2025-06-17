@@ -107,6 +107,10 @@ def article_analogue():
     return render_template('article.html')
     ##return 'static/articles/toward-analogue-design-02-mar-2025.md'
 
+@app.get('/one-page-python')
+def one_page_python():
+    return render_template('one-page-python.html')
+
 @app.context_processor
 def context_preprocessor():
     with open("static/articles/toward-analogue-design-02-mar-2025.md", "r", encoding="utf-8") as input_file:
@@ -123,10 +127,6 @@ def resume_sql():
 def article_flask_heroku():
     # return 'This is a test'
     return render_template('article-flask-heroku.html')
-
-@app.get('/one-page-python')
-def one_page_python():
-    return render_template('one-page-python.html')
 
 if __name__ == '__main__':
     app.run() # debug=True, host='0.0.0.0'
