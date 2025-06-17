@@ -56,7 +56,11 @@
 
     <h3>Loops</h3>
 
-    <pre>for (variable of iterable) {
+    <pre>for (let i = 0; i < 27; i++) {
+    console.log("i: ", i);
+}
+        
+for (variable of iterable) {
     // code block to be executed
 } 
 
@@ -66,11 +70,37 @@ for (const x of letters) {
     // code block to be executed
 }</pre>
 
+    <h3>Conditionals</h3>
+    <pre>
+if ( number <= 1 )  // base case
+    return 1;
+else
+    return number * factorial( number - 1 );
+    </pre>
+or
+<pre>
+if ( number <= 1 )  // base case { 
+    return 1; }          
+else {            
+    return number * factorial( number - 1 ); }  
+</pre>
+
     <h3>DOM</h3>
 
-    <pre>document.getElementById("demo").innerHTML = "Hello JavaScript";
+    <pre>target = window.prompt("Factorial to what integer?", "1000");
+
+document.getElementById("demo").innerHTML = "Hello JavaScript";
 document.getElementById("demo").style.fontSize = "35px";
 document.getElementById("demo").style.display = "none";
+
+window.addEventListener( "load", start, false );
+// "event", function, capture flag 
+    </pre>
+
+    <h3>Add Style Classes</h3>
+    <pre>const element = document.getElementById("myDIV");
+element.classList.add("styleOne");
+element.classList.add("styleTwo");
     </pre>
 </section>
 
