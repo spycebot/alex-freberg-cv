@@ -124,5 +124,9 @@ def article_flask_heroku():
     # return 'This is a test'
     return render_template('article-flask-heroku.html')
 
+@app.get('/one-page-python')
+def one_page_python():
+    return render_template('one-page-python.html')
+
 if __name__ == '__main__':
     app.run() # debug=True, host='0.0.0.0'
