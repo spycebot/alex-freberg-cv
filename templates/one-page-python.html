@@ -17,6 +17,9 @@
     <h3>Language Features</h3>
     <ul>
         <li>Builtins are automatically imported</li>
+        <li>Unpacking: first, second, third, fourth = astring</li>
+        <li>Swapping: x, y = y, x </li>
+        <li>Method parameters are passed by reference (id is the same)</li>
     </ul>
     <h3>Style Guide</h3>
 
@@ -24,11 +27,15 @@
             <li>Four space tabs</li>
             <li>Two lines after a function</li>
             <li>Variable names with no capital letters</li>
+            <li>Function names with no capital letters</li>
         </ul>
     <h3>IDLE</h3>
 
+    <p>Provided with the Python distribution. Generally only used in the early days of teaching Python.</p>
+
     <h3>PyCharm</h3>
 
+    <p>Preferred tool by certain tutors for teaching software engineering with Python. Also supports HTML, Jupyter Notebooks, JavaScript, TypeScript and SQL.</p>
     <p>Show underlying function code: Right click > Go To > Declarations or Usages (F12)</p>
 
     <h3>Strings</h3>
@@ -50,14 +57,48 @@ print("Left justify integer (%-8d)\n" % integer_value)</pre>
 >>> my_letters = list(my_string)
 ['S', 'h', 'a', 'n', 'n', 'o', 'n']</pre>
 
-    <h3>Objects</h3>
+    <h3>List Iteration</h3>
+
+    <pre>names = ["Baker", "Patterson", "Greening", 2547, 99.442]
+names.append("Brown")
+names.insert(0, 'Douglas')
+for lcv in range(len(names)):
+    print(f'{lcv:4} {names[lcv]:15}')</pre>
+
+    <p>lcv stands for loop control value.</p>
+
+    <p>To use the += operator to add a value to a list, the second value must come from another list</p>
+
+    <pre>>>> list += number
+TypeError: 'int' object is not iterable
+>>> list += [number]</pre>
+
+    <h3>Type Comparision</h3>
+
+    <pre>type(9) is int
+type(2.5) is float
+type('x') is str
+type(u'x') is unicode
+type(2+3j) is complex
+type(my_tuple) is tuple
+variable is None
+
+isinstance( 'x', basestring )
+isinstance( u'u', basestring )
+isinstance( 9, int )
+isinstance( 2.5, float )
+isinstance( (2+3j), complex )</pre>
 
     <h3>Some Important Methods</h3>
 
     <pre>print("Hello", "World", sep="_", end="!")
 die = random.randrange(1, 7)
 integer = int(input("Enter and integer: "))
-print("The integer is:", integer, "; the id is:", id(integer), "; the type is:", type(integer))</pre>
+print("The integer is:", integer, "; the id is:", id(integer), "; the type is:", type(integer))
+del my_dictionary["Dict-Key"]
+my_list.count(value)
+type(my_list)
+id(my_list)</pre>
 
 
 
