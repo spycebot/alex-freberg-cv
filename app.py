@@ -128,5 +128,9 @@ def article_flask_heroku():
     # return 'This is a test'
     return render_template('article-flask-heroku.html')
 
+@app.get('/one-page-trigonometry')
+def one_page_trigonometry():
+    return render_template('one-page-trigonometry.html')
+
 if __name__ == '__main__':
     app.run() # debug=True, host='0.0.0.0'

@@ -1,6 +1,4 @@
-.columnar {
-    column-count: 2;
-}
+
 
 table, th, td {
     border-bottom: 1px solid grey;
@@ -20,4 +18,31 @@ pre {
 
 img {
     width: 60%;
+}
+
+
+
+/* Handset */
+@media all and (min-width: 0px) and (max-width: 480px) {
+
+}
+
+/* Tablet */
+@media all and (min-width: 481px) and (max-width: 800px) {
+    .columnar {
+        column-count: 2;
+    }
+}
+
+/* Desktop */
+@media only screen and (min-width:801px) {
+    .columnar {
+        column-count: 2;
+    }
+}
+
+@media print {
+    .columnar {
+        column-count: 2;
+    }
 }

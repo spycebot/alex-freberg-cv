@@ -157,6 +157,12 @@ li, td {
     column-count: 2;
 }
 
+math {
+    /* border: 1px solid grey; */
+    margin: 2px;
+    padding: 2px;
+}
+
 /* Handset */
 @media all and (min-width: 0px) and (max-width: 480px) {
     button, input {
