@@ -31,7 +31,9 @@
         </ul>
     <h3>IDLE</h3>
 
-    <p>Provided with the Python distribution. Generally only used in the early days of teaching Python.</p>
+    <p>Provided with the Python distribution. Generally only used in the early days of teaching Python. 
+        Useful for quickly checking Python statement syntax, and for running quick calculations requiring python libraries like Math and Pandas.
+    </p>
 
     <h3>PyCharm</h3>
 
@@ -57,6 +59,14 @@ print("Left justify integer (%-8d)\n" % integer_value)</pre>
 >>> my_letters = list(my_string)
 ['S', 'h', 'a', 'n', 'n', 'o', 'n']</pre>
 
+    <h3>Tuples</h3>
+
+    <p>The standard way to create tuples is with round brackets. They can also be created without. They can also be created with a single value.</p>
+
+    <pre>standard_tuple = (1, 2, 3, 4)
+no_brackets_tuple = 5, 6, 7, 8
+single_value_tuple = 9,</pre>
+
     <h3>List Iteration</h3>
 
     <pre>names = ["Baker", "Patterson", "Greening", 2547, 99.442]
@@ -72,6 +82,16 @@ for lcv in range(len(names)):
     <pre>>>> list += number
 TypeError: 'int' object is not iterable
 >>> list += [number]</pre>
+
+    <h3>List from Range</h3>
+
+    <pre>a_range = range(0, 199, 2)
+a_list = list(a_range)
+
+print("Type of a_range:", type(a_range), "\n", a_range)
+print("Type of a_list:", type(a_list), "\n", a_list)
+for number in a_list:
+   print(number, end=" ")</pre>
 
     <h3>Type Comparision</h3>
 

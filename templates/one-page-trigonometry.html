@@ -215,6 +215,11 @@
     </math>
     <p>*i.e. "domain error", or "Invalid input", etc.</p>
 
+    <pre>>>> import math
+>>> math.tan(math.radians(90))
+1.633123935319537e+16
+>>> </pre>
+
     <hr>
 
     <math display="block">
@@ -573,7 +578,281 @@
         <mo>)</mo>
     </math>
 
+    <hr>
 
+    <math display="block">
+        <mtable>
+            <mtr>
+                <mtd>
+                    <mi>cot</mi>
+                    <mi>&theta;</mi>
+                </mtd>
+                <mtd>
+                    <mo>=</mo>
+                </mtd>
+                <mtd>
+                    <mi>tan</mi>
+                    <mo>(</mo>
+                    <mn>90</mn>
+                    <mi>&deg;</mi>
+                    <mo>&ndash;</mo>
+                    <mi>&theta;</mi>
+                    <mo>)</mo>
+                </mtd>
+            </mtr>
+            <mtr>
+                <mtd></mtd>
+                <mtd>
+                    <mo>=</mo>
+                </mtd>
+                <mtd>
+                    <mfrac>
+                        <mrow>
+                            <mi>sin</mi>
+                            <mo>(</mo>
+                            <mn>90</mn>
+                            <mi>&deg;</mi>
+                            <mo>&ndash;</mo>
+                            <mi>&theta;</mi>
+                            <mo>)</mo>
+                        </mrow>
+                        <mrow>
+                            <mi>cos</mi>
+                            <mo>(</mo>
+                            <mn>90</mn>
+                            <mi>&deg;</mi>
+                            <mo>&ndash;</mo>
+                            <mi>&theta;</mi>
+                            <mo>)</mo>                    
+                        </mrow>
+                    </mfrac>
+                </mtd>
+            </mtr>
+            <mtr>
+                <mtd></mtd>
+                <mtd>
+                    <mo>=</mo>
+                </mtd>
+                <mtd>
+                    <mfrac>
+                        <mrow>
+                            <mi>cos</mi>
+                            <mi>&theta;</mi>
+                        </mrow>
+                        <mrow>
+                            <mi>sin</mi>
+                            <mi>&theta;</mi>                 
+                        </mrow>
+                    </mfrac>
+                </mtd>
+            </mtr>
+            <mtr>
+                <mtd></mtd>
+                <mtd>
+                    <mo>=</mo>
+                </mtd>
+                <mtd>
+                    <mn>1</mn>
+                    <mo>&div;</mo>
+                    <mfrac>
+                        <mrow>
+                            <mi>sin</mi>
+                            <mi>&theta;</mi>
+                        </mrow>
+                        <mrow>
+                            <mi>cos</mi>
+                            <mi>&theta;</mi>                 
+                        </mrow>
+                    </mfrac>
+                </mtd>
+            </mtr>
+            <mtr>
+                <mtd></mtd>
+                <mtd>
+                    <mo>=</mo>
+                </mtd>
+                <mtd>
+                    <mn>1</mn>
+                    <mo>&div;</mo>
+                    <mi>tan</mi>
+                    <mi>&theta;</mi>
+                </mtd>
+            </mtr>
+        </mtable>
+    </math>
+
+    <h3>Example</h3>
+
+    <math>
+        <mtext>Solve:</mtext>     
+        <mspace width="0.5em"> </mspace>             
+        <mi>cos</mi>
+        <mi>&theta;</mi>
+        <mo>+</mo>
+        <msup>
+            <mi>sin</mi>
+            <mn>2</mn>
+        </msup>
+        <mi>&theta;</mi>
+        <mo>=</mo>
+        <mn>1</mn>
+    </math>
+
+    <math display="block">
+        <mtable>
+            <mtr>
+                <mtd>
+                    <mi>cos</mi>
+                    <mi>&theta;</mi>
+                    <mo>+</mo>
+                    <msup>
+                        <mi>sin</mi>
+                        <mn>2</mn>
+                    </msup>
+                    <mi>&theta;</mi>
+                </mtd>
+                <mtd>
+                    <mo>=</mo>
+                </mtd>
+                <mtd>
+                    <mn>1</mn>
+                </mtd>
+            </mtr>
+            <mtr>
+                <mtd>
+                    <msup>
+                        <mi>x</mi>
+                        <mn>2</mn>
+                    </msup>
+                    <mo>+</mo>
+                    <msup>
+                        <mi>y</mi>
+                        <mn>2</mn>
+                    </msup>
+                </mtd>
+                <mtd>
+                    <mo>=</mo>
+                </mtd>
+                <mtd>
+                    <mn>1</mn>
+                </mtd>     
+            </mtr>
+            <mtr>
+                <mtd>
+                    <msup>
+                        <mi>cos</mi>
+                        <mn>2</mn>
+                    </msup>
+                    <mi>&theta;</mi>
+                    <mo>+</mo>
+                    <msup>
+                        <mi>sin</mi>
+                        <mn>2</mn>
+                    </msup>
+                    <mi>&theta;</mi>
+                </mtd>
+                <mtd>
+                    <mo>=</mo>
+                </mtd>
+                <mtd>
+                    <mn>1</mn>
+                </mtd>     
+            </mtr>
+            <mtr>
+                <mtd>
+                    <msup>
+                        <mi>sin</mi>
+                        <mn>2</mn>
+                    </msup>
+                    <mi>&theta;</mi>    
+                </mtd>
+                <mtd>
+                    <mo>=</mo>
+                </mtd>
+                <mtd>
+                    <mn>1</mn>
+                    <mo>-</mo>
+                    <msup>
+                        <mi>cos</mi>
+                        <mn>2</mn>
+                    </msup>
+                    <mi>&theta;</mi>
+                </mtd>
+            </mtr>
+            <mtr>
+                <mtd>
+                    <mi>cos</mi>
+                    <mi>&theta;</mi>
+                    <mo>+</mo>
+                    <mn>1</mn>
+                    <mo>-</mo>
+                    <msup>
+                        <mi>cos</mi>
+                        <mn>2</mn>
+                    </msup>
+                    <mi>&theta;</mi>
+                </mtd>
+                <mtd>
+                    <mo>=</mo>
+                </mtd>
+                <mtd>
+                    <mn>1</mn>
+                </mtd>
+            </mtr>
+            <mtr>
+                <mtd>
+                    <mi>cos</mi>
+                    <mi>&theta;</mi>
+                    <mo>-</mo>
+                    <msup>
+                        <mi>cos</mi>
+                        <mn>2</mn>
+                    </msup>
+                    <mi>&theta;</mi>
+                </mtd>
+                <mtd>
+                    <mo>=</mo>
+                </mtd>
+                <mtd>
+                    <mn>0</mn>
+                </mtd>
+            </mtr>
+            <mtr>
+                <mtd>
+                    <mi>cos</mi>
+                    <mi>&theta;</mi>
+                    <mo>(</mo>
+                    <mn>1</mn>
+                    <mo>-</mo>
+                    <mi>cos</mi>
+                    <mi>&theta;</mi>
+                    <mo>)</mo>
+                </mtd>
+                <mtd>
+                    <mo>=</mo>
+                </mtd>
+                <mtd>
+                    <mn>0</mn>
+                </mtd>
+            </mtr>
+        </mtable>
+    </math>
+
+    <math>
+        <mi>cos</mi>
+        <mi>&theta;</mi>
+        <mo>=</mo>
+        <mn>0</mn>    
+        <mspace width="0.5em"></mspace>
+        <mtext>or</mtext>    
+        <mspace width="0.5em"></mspace>
+        <mn>1</mn>
+        <mo>-</mo>
+        <mi>cos</mi>
+        <mi>&theta;</mi>
+        <mo>=</mo>
+        <mn>0</mn>
+    </math>
 
     <h3>Lessons Learned</h3>
 
@@ -590,6 +869,7 @@
         <li><a href="https://w3c.github.io/mathml-core/#the-top-level-math-element">W3C MathML Core Editor's Draft</a></li>
         <li><a href="https://developer.mozilla.org/en-US/docs/Glossary/Character_reference">Common HTML Escape Characters</a></li>
         <li><a href="https://www.youtube.com/playlist?list=PLkNbGj38zTLMh--tbNXPINHpYA8cmafUA">Video Playlist: The How and Why of Mathematics</a></li>
+        <li><a href="https://stackoverflow.com/questions/2620352/aligning-mathml-equations-at-equal-sign">Aligning MathML equations at equal sign</a></li>
     </ul>
 
 

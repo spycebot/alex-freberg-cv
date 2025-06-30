@@ -6,12 +6,12 @@
 # (c) 2024 Shannon Douglas Ware 
 
 
-from flask import Flask, render_template
+from flask import Flask, render_template, send_from_directory, request
 import markdown
 # import markdown.extensions.fenced_code
 
 
-app = Flask(__name__)
+app = Flask(__name__) #, static_folder='static', static_url_path='')
 
 ### Web Pages ###
 @app.route("/")
@@ -131,6 +131,17 @@ def article_flask_heroku():
 @app.get('/one-page-trigonometry')
 def one_page_trigonometry():
     return render_template('one-page-trigonometry.html')
+
+@app.route('/ads.txt', methods=['GET'])
+def static_from_root():
+    print("request.path[1:]:", request.path[1:])
+    return send_from_directory(app.static_folder, request.path[1:])
+
+
+"""def sitemap():
+    response = Flask.make_response(open('ads.txt').read())
+    response.headers['Content-type'] = "text/plain"
+    return response"""
 
 if __name__ == '__main__':
     app.run() # debug=True, host='0.0.0.0'

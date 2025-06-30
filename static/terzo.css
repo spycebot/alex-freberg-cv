@@ -141,7 +141,8 @@ li, td {
 }
 
 #avatar {
-    border-radius: 50%;
+    /* border-radius: 50%; */
+    clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
 }
 
 .header_one {
@@ -161,6 +162,10 @@ math {
     /* border: 1px solid grey; */
     margin: 2px;
     padding: 2px;
+}
+
+mtd {
+    /* border: 1px solid grey; */
 }
 
 /* Handset */
