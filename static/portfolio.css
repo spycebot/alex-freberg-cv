@@ -1,4 +1,6 @@
-
+body {
+    font-size: 160%;
+}
 
 table, th, td {
     border-bottom: 1px solid grey;
@@ -32,12 +34,20 @@ img {
     .columnar {
         column-count: 2;
     }
+
+    .article_image {
+        width: 50%;
+    }
 }
 
 /* Desktop */
 @media only screen and (min-width:801px) {
     .columnar {
         column-count: 2;
+    }
+
+    .article_image {
+        width: 25%;
     }
 }
 

@@ -32,25 +32,25 @@ A slide rule is a hand operated mechanical calculator, consisting of inter-slidi
 
 A circular slide rule used by pilots to calculate fuel consumption, wind correction angles, ground speed, and estimated time of arrival.
 
-<img src="/static/ASA-E6-B-Flight-Computer.png" style="width: 25%;">
+<img src="/static/ASA-E6-B-Flight-Computer.png" class="article_image">
 
 ### Antikythera Mechanism
 
 Determined using X-ray scans to consist of 37 meshing bronze gears able to represent the movement of the sun and the moon through the Zodiac, and predict eclipses and indicate the irregular orbit of the moon.
 
-<img src="https://cdn.mos.cms.futurecdn.net/5qTGKH9yovCUbmnnGiND7-650-80.jpg.webp" style="width: 25%;">
+<img src="https://cdn.mos.cms.futurecdn.net/5qTGKH9yovCUbmnnGiND7-650-80.jpg.webp" class="article_image">
 
 ### Astrolobe
 
 Assisted mariners in calculating global position and tell time by measuring the altitude of celestial objects.
 
-<img src="https://www.worldhistory.org/img/r/p/1000x1200/17846.png.webp?v=1702340883-1693382275" clip-path: inset(0px 5px 0px 0px)" style="width: 25%;">
+<img src="https://www.worldhistory.org/img/r/p/1000x1200/17846.png.webp?v=1702340883-1693382275" class="article_image" style="clip-path: inset(0px 5px 0px 0px);">
 
 ### Orrery
 
 Mechanical model of the solar system that illustrates or predicts the relative positions and motions of the planets and moons, usually according to the heliocentric model.
 
-<img src="https://collections.rmg.co.uk/media/3/538/628/s9689_001.jpg" style="width: 25%;">
+<img src="https://collections.rmg.co.uk/media/3/538/628/s9689_001.jpg" class="article_image">
 
 [A 1766 Benjamin Martin Orrery, used at Harvard](https://en.wikipedia.org/wiki/Orrery#/media/File:Planetarium_in_Putnam_Gallery_2,_2009-11-24.jpg)
 
@@ -58,13 +58,13 @@ Mechanical model of the solar system that illustrates or predicts the relative p
 
 First designed by Charles Babbage, scaled mechanical calculation of trigonometric tables. There is a long and storied history of the difference engine, and it has been design and built by others, which we shall dive into in the near future.
 
-<img src="https://cdn.britannica.com/10/23610-050-6E34CF6B/portion-Difference-Engine-Charles-Babbage-logarithm-tables-1832.jpg?w=300" style="width: 25%;">
+<img src="https://cdn.britannica.com/10/23610-050-6E34CF6B/portion-Difference-Engine-Charles-Babbage-logarithm-tables-1832.jpg?w=300" class="article_image">
 
 ### Analytical Engine
 
 Charles Babbage 1837 [surely others]
 
-<img src="https://www.sciencemuseum.org.uk/sites/default/files/styles/embedded_image/public/2023-07/1878-0003_%280001%29.png?itok=vpReBZPp" style="width: 25%;">
+<img src="https://www.sciencemuseum.org.uk/sites/default/files/styles/embedded_image/public/2023-07/1878-0003_%280001%29.png?itok=vpReBZPp" class="article_image">
 
 ### Mini Moog Synthesiser
 
@@ -72,28 +72,28 @@ Analogue synthesisers were in part based on analogue computer circuits. Uses Con
 
 Key term: Continuously variable voltage-controlled oscillators
 
-<img src="https://www.bettermusic.com.au/media/catalog/product/m/o/moog_model_d_partner-1.jpg?optimize=high&fit=bounds&height=1200&width=1920" style="width: 25%;">
+<img src="https://www.bettermusic.com.au/media/catalog/product/m/o/moog_model_d_partner-1.jpg?optimize=high&fit=bounds&height=1200&width=1920" class="article_image">
 
 ### Planimeter
 
 Measures the area of a two-dimensional shape by tracing around it.
 
-<img src="https://www.tandfonline.com/cms/asset/724a8f0e-4828-45a4-b802-043d69c621ea/ucmj_a_1702852_f0001_c.jpg" style="width: 25%;">
+<img src="https://www.tandfonline.com/cms/asset/724a8f0e-4828-45a4-b802-043d69c621ea/ucmj_a_1702852_f0001_c.jpg" class="article_image">
 
 ### Kerrison Predictor
 
 One of the first fully automated anti-aircraft gun fire controllers.
 
-<img src="https://spitfirespares.co.uk/Website%20Products%20382/ATS%20Predictor%20Team.jpg" style="width: 25%;">
+<img src="https://spitfirespares.co.uk/Website%20Products%20382/ATS%20Predictor%20Team.jpg" class="article_image">
 
 ### Fire Control Systems
 
 The stuff of Norbert Weiner. 
 
-<img src="https://maritime.org/doc/afcc/img/frontpiece.jpg" style="width: 25%;">
+<img src="https://maritime.org/doc/afcc/img/frontpiece.jpg" class="article_image">
 
 <a href="https://maritime.org/doc/afcc/index.php">Handbook of The Admiralty Fire Control Clock</a>
 
 ### Sources
 
-https://www.youtube.com/watch?v=e2Mtt2rb654
+[Curious Droid: Are Analogue Computer Hybrids The Future?](https://www.youtube.com/watch?v=e2Mtt2rb654)
