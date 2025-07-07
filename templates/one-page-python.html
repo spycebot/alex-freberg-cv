@@ -35,6 +35,10 @@
         Useful for quickly checking Python statement syntax, and for running quick calculations requiring python libraries like Math and Pandas.
     </p>
 
+    <p>Run IDLE from Virtual Environment</p>
+
+    <pre>(.venv) C:\MyProject> python.exe -m idlelib.idle</pre>
+
     <h3>PyCharm</h3>
 
     <p>Preferred tool by certain tutors for teaching software engineering with Python. Also supports HTML, Jupyter Notebooks, JavaScript, TypeScript and SQL.</p>
@@ -108,6 +112,27 @@ isinstance( u'u', basestring )
 isinstance( 9, int )
 isinstance( 2.5, float )
 isinstance( (2+3j), complex )</pre>
+
+    <h3>Map()</h3>
+
+    <pre>>>> data = ['Shannon', 'Douglas', 'Jordan', 'Ware', 'Baker']
+>>> def upper(str):
+	return str.upper()
+>>> list(map(upper, data))</pre>
+
+    <h3>List Comprehensions</h3>
+
+    <p>List comprehensions are a powerful feature in Python that allows you to create lists in a concise, readable, and
+efficient way. They're often used for tasks like filtering, transforming, or combining data. (Ollama 3.1)</p>
+
+    <pre>>>> # Simple List Comprehension
+>>> numbers = range(10)
+>>> squares = [x**2 for x in numbers]
+>>> # Filtering
+>>> even_numbers = [x for x in number_list if x % 2 == 0]
+>>> # Nested List Comprehension
+>>> people = [[dt, en] for dt in data for en in even_numbers]
+    </pre>
 
     <h3>Some Important Methods</h3>
 
