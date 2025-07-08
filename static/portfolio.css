@@ -32,7 +32,7 @@ img {
 /* Tablet */
 @media all and (min-width: 481px) and (max-width: 800px) {
     .columnar {
-        column-count: 2;
+        column-count: 1;
     }
 
     .article_image {

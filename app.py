@@ -146,6 +146,11 @@ def one_page_trigonometry():
     return render_template('one-page-trigonometry.html')
 
 
+@app.get('/one-page-data-science')
+def one_page_data_science():
+    return render_template('one-page-data-science.html')
+
+
 @app.route('/ads.txt', methods=['GET'])
 def static_from_root():
     print("request.path[1:]:", request.path[1:])

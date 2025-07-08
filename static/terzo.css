@@ -158,6 +158,17 @@ li, td {
     column-count: 2;
 }
 
+#sizeDisplay {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    font-family: 'Courier New', monospace;
+    font-size: 12px;
+    padding: 6px;
+}
+
 math {
     /* border: 1px solid grey; */
     margin: 2px;

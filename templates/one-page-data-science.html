@@ -1,0 +1,116 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+<link rel="stylesheet" href="{{ url_for('static', filename='portfolio.css') }}">
+
+{% endblock %}
+
+{% block body %}
+
+<section class="columnar">
+
+    <h2>Data Science Overview</h2>
+
+    <p>Data is the raw material from which information is made. </p>
+
+    <p>And even the artifacts of data themselves -- the numbers and the letters -- will change over time, as our own definitions of letters and numbers changes slowly over time.</p>
+
+    <p>One of the qualities that makes data great, is that each time we take a look at data we earn the opportunity to look at reality in a new albeit verifiable way. Data offers us the opportunity to both prove and disprove our assumptions about the world.</p>
+
+    <p>Likewise, one of the qualities that makes data vulnerable to subjectivity, is that each time we take a look at data, there is the opportunity to draw new, sometimes contradicting conclusions.</p>
+
+    <p>Be that as it may, data and data-driven decisions are better than the alternative. Data and data-driven decisions orient us toward objectivity, despite the persistent illusiveness of unadulterated objectivity itself.</p>
+
+    <h2>The Role of Pandas in Modern Data Science</h2>
+
+    <p>Advanced methods of calculating, manipulating, visualizing and describing data require column-wise and table-wide tools that are optimised for speed and accuracy. 
+        Introduced in 2008 for use in quantitative finance, the 'panel data' Python Data Analysis Library is <i>sine qua non</i> in the data scientist's toolbelt.</p>
+
+    <h3>Obtaining Data from the Internet</h3>
+
+    <p>Because the rate at which data is being produced is accelerating all of the time, it is important to easily and conveniently obtain data from the widest range of sources possible, namely, the Internet.</p>
+
+    <p>Ideally, our method for obtaining information should be as automated as possible. Python has a number of available techniques for obtaining dataset. In this section, we will look at examples for fetching CSV files from the Internet.</p>
+
+    <p>Pandas is built on top of NumPy.</p>
+
+    <ol>
+        <li>Using the `requests` library</li>
+        <li>Using the `urllib` library</li>
+        <li>Using the `http.client` module</li>
+        <li>Load straight to dataframe</li>
+    </ol>
+
+    <p>1. Using the `requests` library</p>
+
+    <pre>>>> import requests
+>>> response = requests.get('https://example.com/resource.txt')
+>>> print(response.text)</pre>
+
+    <p>2. Using the `urllib` library</p>
+
+    <pre>>>> import urllib.request
+>>> with urllib.request.urlopen('https://example.com/resource.txt') as file:
+        print(file.read().decode())</pre>
+
+    <p>3. Using the `http.client` module</p>
+
+    <pre>>>> import http.client
+>>> conn = http.client.HTTPSConnection("example.com")
+>>> conn.request("GET", "/resource.txt")
+>>> response = conn.getresponse()
+>>> print(response.read().decode())</pre>
+
+    <p>4. Load straight to dataframe</p>
+
+    <pre>>>> import pandas as pd
+>>> df = pd.read_csv(url)
+>>> titanic = pd.read_excel("titanic.xlsx", sheet_name="passengers")</pre>
+
+    <p>Source: Ollama</p>
+
+    <h3>Bamboo to Cut our Pandas Teeth</h3>
+
+    <p>Below are elementary functions to take us through the paces.</p>
+
+    <pre>>>> df.describe()
+>>> df.info()
+>>> df.head()
+>>> select_column = df["Column Name"]  
+>>> type(df)
+>>> type(select_column)      
+>>> df.shape
+>>> select_column.shape
+>>> two_columns = df[["Column One", "Column Two"]]
+>>> two_columns.shape
+>>> type(two_columns)
+>>> selected_values = df[df["Column Name"] > some_value]
+>>> # or
+>>> df["Column Name"] > some_value
+>>> selected_values_2 = df[df["Column Name"].isin([constant_one, constant_two])]
+>>> # or
+>>> selected_values_3 = df[(df["Column Name"] == constant_one) | (df["Column Name"] == constant_two)]
+>>> select_no_na = df[df["Column Name"].notna()]
+>>> # Select from one column based on another's value
+>>> certain_items = df.loc[df["Column Two"] > some_value, "Column One"]
+>>> # Select rows 10 to 25 and columns 3 to 5
+>>> df.iloc[9:25, 2:5]
+>>> # Assign a value upon selection (first three elements of the fourth column)
+>>> df.iloc[0:3, 3] = "REDACTED"
+>>> df["Column Name"].max()
+>>> df.dtypes
+</pre>
+
+<h3>Plotting Data</h3>
+
+<pre>>>> import pandas as pd
+>>> import matplotlib.pyplot as plt
+>>> url = 'https://people.sc.fsu.edu/~jburkardt/data/csv/mlb_teams_2012.csv'
+>>> data = pd.read_csv(url)
+>>> data.plot()
+>>> plt.show()</pre>
+
+</section>
+
+{% endblock %}
