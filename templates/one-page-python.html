@@ -146,7 +146,15 @@ print("The integer is:", integer, "; the id is:", id(integer), "; the type is:",
 del my_dictionary["Dict-Key"]
 my_list.count(value)
 type(my_list)
-id(my_list)</pre>
+id(my_list)
+dir(statistics)</pre>
+
+    <h3>Python Documentation</h3>
+
+    <pre>>>> import statistics
+>>> for element in dir(statistics):
+	print("="*20, "\n", element, "\n")
+	print(eval(f"statistics.{element}.__doc__"), "\n")</pre>
 
 
 
