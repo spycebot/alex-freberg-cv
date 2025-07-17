@@ -110,24 +110,40 @@ def one_page_csharp():
     return render_template('one-page-csharp.html')
 
 
-@app.get('/articles/analogue')
-def article_analogue():
-    return render_template('article.html')
-    ##return 'static/articles/toward-analogue-design-02-mar-2025.md'
-
-
 @app.get('/one-page-python')
 def one_page_python():
     return render_template('one-page-python.html')
 
 
-@app.context_processor
+@app.get('/articles/analogue')
+def article_analogue():
+    with open("static/articles/toward-analogue-design-02-mar-2025.md", "r", encoding="utf-8") as input_file:
+        text = input_file.read()
+    return render_template('article.html', text=text, markdown=markdown.markdown)
+
+
+@app.get('/articles/nz-industry')
+def article_nz_industry():
+    with open("static/articles/new-zealand-industry-in-data-10-jul-2025.md", "r", encoding="utf-8") as input_file:
+        text = input_file.read()
+    return render_template('article.html', text=text, markdown=markdown.markdown)
+
+
+
+'''@app.context_processor
 def context_preprocessor():
     with open("static/articles/toward-analogue-design-02-mar-2025.md", "r", encoding="utf-8") as input_file:
         text = input_file.read()
     # html = markdown.markdown(text, extensions=["fenced_code"])
     # see https://artandhacks.se/articles/flask-markdown/ for {{stringOfMarkdown|safe}}
     return dict(text=text, markdown=markdown.markdown)
+
+
+@app.context_processor
+def context_preprocessor():
+    with open("static/articles/new-zealand-industry-in-data-10-jul-2025.md", "r", encoding="utf-8") as input_file:
+        text = input_file.read()
+    return dict(text=text, markdown=markdown.markdown)'''
 
 
 @app.get('/resume-sql')

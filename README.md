@@ -4,7 +4,7 @@
 
 ## Summary
 
-Do it right this time. Unemployment is a fate worse than death, and it can only be remediated by the proper contextualisation of marketable skills, as well as application to the task of staying abrest of market trends and directions.
+Do it right this time. Unemployment is a fate worse than death, and it can only be remediated by the proper contextualisation of marketable skills, as well as application to the task of staying abreast of market trends and directions.
 
 ### Problem
 
@@ -52,8 +52,12 @@ Increased costs have resulted from increased web traffic, which is a leading ind
 
 ### Model
 
+Flask is a free, low opinion, micro-web framework. As with the rest of the Python ecosystem, the documentation is not robust. However, with the assistance of code-generating AI, and a little luck, you can probably build what you are looking to build.
+
 ### Discussion
+
+At present, we have implemented the rendering of markdown to HTML in a way that does not allow us to serve multiple pages served thusly. At this stage our own lack of internal documentation is proving to be a real source of anxiety, and must be rectified going forward.
 
 ### Conclusion
 
-These are in fact marketable skills. We present here a short list of likely job titles.
+While coding and offering free web services are fun, the task at hand is much more pragmatic than simply acquiring new skills. They must be marketable, merchantable skills. To this end, we must show our work, which in short means regular Git commits.
