@@ -36,7 +36,7 @@ class PageSizeMonitor {
         this.displayElement.innerHTML = `
             <div>Width: ${documentWidth}px</div>
             <div>Height: ${documentHeight}px</div>
-            <div>Y Scroll: ${scrollY}px</div>
+            <div>Y Scroll: ${scrollY.toFixed(0)}px</div>
         `;
     }
 

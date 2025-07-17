@@ -21,6 +21,9 @@ pre {
 /* Handset */
 @media all and (min-width: 0px) and (max-width: 480px) {
 
+    .article_image {
+        width: 100%;
+    }
 }
 
 /* Tablet */
