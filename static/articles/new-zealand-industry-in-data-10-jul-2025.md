@@ -6,7 +6,7 @@
 
 The goal of this project is to go from online data source to reasonable visualisation of the most outstanding features of the data, via an exploration of the data using our standard tool set. Our standard for determining whether the data exploration is complete will be that the visualisation is both reasonable, and holds up to scrutiny by third parties.
 
-We will choose a dataset is conveniently available, and is in a known file format that is easy to process. Economic data published by the New Zealand government provides a ready source of data matching these criteria.
+We will choose a dataset based on it being conveniently available, and it being in a known file format that is easy to process. Economic data published by the New Zealand government provides a ready source of data matching these criteria.
 
 We will attempt to conduct meaningful exploration of our chosen data set, create appropriate visualisations, and then draw conclusions based on mathematical analysis of the data.
 
@@ -105,16 +105,18 @@ N.B.: This can be amended to 118 industry categories. "Food product manufacturin
 	&gt;&gt;&gt; ax.plot(agriculture['Year'], agriculture['Value'])
 	&gt;&gt;&gt; plt.show()</pre>
 
+<a href="/static/Figure_2 Agriculture Total Income - 16 JUL 2025.png"><img src="/static/Figure_2 Agriculture Total Income - 16 JUL 2025.png" class="article_image"></a>
+
 	
 ### Solution
 
-1. For each "Industry_name_NZSIOC" (Column 3), capture the "Value" Column (8) of "Variable_name" Total Income (Column (6) for each "Year" (Column 0).
+1. For each "Industry_name_NZSIOC" (Column 3), capture the "Value" (Column 8) of "Variable_name" Total Income (Column 6) for each "Year" (Column 0).
 
 	<pre>&gt;&gt;&gt; total_income = data.loc[data['Variable_name'] == 'Total income', 'Year', 'Industry_name_NZSIOC', 'Value']</pre>
 
-1. For each subset of data captured above, calculate the linear regression of "Value" Column (8). If the slope is positive, the industry is in a growth trend, if the slope is negative, the industry is in a contraction trend.
+1. For each subset of data captured above, calculate the linear regression of "Value" (Column 8). If the slope is positive, the industry is in a growth trend, if the slope is negative, the industry is in a contraction trend.
 
-1. Graph 20 largest industries per 2024 "Value" by highest and lowest slope.
+1. Graph 20 largest industries per 2024 "Value" <s>by highest and lowest slope</s>.
 
 1. Graph all industries in a negative growth trend (contracting)
 
@@ -212,6 +214,8 @@ N.B.: This can be amended to 118 industry categories. "Food product manufacturin
 	# That is a wrap
 	timestamp = datetime.now().isoformat(timespec='seconds')
 	print(f'Ending at {timestamp}')
+
+[Latest version on GitHub](https://github.com/spycebot/nz-industry)
 	
 ### Results
 
@@ -219,9 +223,13 @@ Industries in a growth trend
 
 <a href="/static/Figure_5 NZ Growing Industries - 17 JUL 2025.png"><img src="/static/Figure_5 NZ Growing Industries - 17 JUL 2025.png" class="article_image"></a>
 
+(Click for larger version)
+
 Industries in a contraction trend
 
 <a href="/static/Figure_4 NZ Contracting Industries - 17 JUL 2025.png"><img src="/static/Figure_4 NZ Contracting Industries - 17 JUL 2025.png" class="article_image"></a>
+
+(Click for larger version)
 
 ### Next Steps
 
