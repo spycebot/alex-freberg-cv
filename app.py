@@ -115,6 +115,11 @@ def one_page_python():
     return render_template('one-page-python.html')
 
 
+@app.get('/python-exam-prep')
+def python_exam_prep():
+    return render_template('python-exam.html')
+
+
 @app.get('/articles/analogue')
 def article_analogue():
     with open("static/articles/toward-analogue-design-02-mar-2025.md", "r", encoding="utf-8") as input_file:
@@ -125,6 +130,13 @@ def article_analogue():
 @app.get('/articles/nz-industry')
 def article_nz_industry():
     with open("static/articles/new-zealand-industry-in-data-10-jul-2025.md", "r", encoding="utf-8") as input_file:
+        text = input_file.read()
+    return render_template('article.html', text=text, markdown=markdown.markdown)
+
+
+@app.get('/articles/scoff')
+def scoff_as_a_cultural_norm():
+    with open("static/articles/scoff-as-a-cultural-norm.md", "r", encoding="utf-8") as input_file:
         text = input_file.read()
     return render_template('article.html', text=text, markdown=markdown.markdown)
 
