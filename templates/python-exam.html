@@ -55,6 +55,451 @@
                 12
             </td>
         </tr>
+        <tr>
+            <td>
+                >>>
+            </td>
+            <td>
+                print('Here is what I have: ', (7/2) + (False or True) + (9%3))
+            </td>
+        </tr>
+        <tr>
+            <td>
+                
+            </td>
+            <td>
+                Here is what Ihave:  4.5
+            </td>
+        </tr>
+        <tr>
+            <td>
+                >>>
+            </td>
+            <td>
+                7/2
+            </td>
+        </tr>
+        <tr>
+            <td>
+                
+            </td>
+            <td>
+                3.5
+            </td>
+        </tr>
+        <tr> <!-- Input -->
+            <td>
+                >>>
+            </td>
+            <td>
+                (7/2) + (False or True)
+            </td>
+        </tr>
+        <tr> <!-- Output -->
+            <td>
+                
+            </td>
+            <td>
+                4.5
+            </td>
+        </tr>
+        <!-- Input -->
+        <tr> 
+            <td>
+                >>>
+            </td>
+            <td>
+                9%3
+            </td>
+        </tr>
+        <!-- Output -->
+        <tr> 
+            <td>
+                
+            </td>
+            <td>
+                0
+            </td>
+        </tr>
+        <!-- Input -->
+        <tr> 
+            <td>
+                >>>
+            </td>
+            <td>
+                x = 3
+            </td>
+        </tr>
+        <tr> 
+            <td>
+                >>>
+            </td>
+            <td>
+                text = 'I have ' + x + '\ncars in my garage.'
+            </td>
+        </tr>
+        <!-- Output -->
+        <tr> 
+            <td>
+                
+            </td>
+            <td style="color: red">
+                Traceback (most recent call last):
+            </td>
+        </tr>
+        <tr> 
+            <td>
+                
+            </td>
+            <td style="color: red">
+                &#9; File "&#60;pyshell#1&#62;", line 1, in <module>
+            </td>
+        </tr>
+        <tr> 
+            <td>
+                
+            </td>
+            <td style="color: red">
+                &#9; &#9; text = 'I have ' + x + '\ncars in my garage.'
+            </td>
+        </tr>
+        <tr> 
+            <td>
+                
+            </td>
+            <td style="color: red">
+                TypeError: can only concatenate str (not "int") to str
+            </td>
+        </tr>
+        <!-- Input -->
+        <tr> 
+            <td>
+                >>>
+            </td>
+            <td>
+                y = 4 + 2i
+            </td>
+        </tr>
+        <!-- Output -->
+        <tr> 
+            <td>
+                
+            </td>
+            <td style="color: red">
+                SyntaxError: invalid decimal literal
+            </td>
+        </tr>
+        <!-- Input -->
+        <tr> 
+            <td>
+                >>>
+            </td>
+            <td>
+                y
+            </td>
+        </tr>
+        <tr> 
+            <td>
+                >>>
+            </td>
+            <td>
+                y = 4 + 2j
+            </td>
+        </tr>
+        <!-- Output -->
+        <tr> 
+            <td>
+                
+            </td>
+            <td>
+                (4+2j)
+            </td>
+        </tr>
+        <!-- Input -->
+        <tr> 
+            <td>
+                >>>
+            </td>
+            <td>
+                type(y)
+            </td>
+        </tr>
+        <!-- Output -->
+        <tr> 
+            <td>
+                
+            </td>
+            <td>
+                &#60;class 'complex'&#62;
+            </td>
+        </tr>
+        <!-- Input -->
+        <tr> 
+            <td>
+                >>>
+            </td>
+            <td style="color: orange">
+                True and False
+            </td>
+        </tr>
+        <!-- Output -->
+        <tr> 
+            <td>
+                
+            </td>
+            <td style="color: blue">
+                False
+            </td>
+        </tr>
+        <!-- Input -->
+        <tr> 
+            <td>
+                >>>
+            </td>
+            <td>
+                test = "TEST"
+            </td>
+        </tr>
+        <tr> 
+            <td>
+                >>>
+            </td>
+            <td>
+                result = test[0] + test[-1]
+            </td>
+        </tr>
+        <tr> 
+            <td>
+                >>>
+            </td>
+            <td>
+                result
+            </td>
+        </tr>
+        <!-- Output -->
+        <tr> 
+            <td>
+                
+            </td>
+            <td style="color: blue">
+                'TT'
+            </td>
+        </tr>
+        <!-- Input -->
+        <tr> 
+            <td>
+                >>>
+            </td>
+            <td>
+                content = 'Learning Python is interesting especially when using strings'
+            </td>
+        </tr>
+        <tr> 
+            <td>
+                >>>
+            </td>
+            <td>
+                x = content.find('in', 6)
+            </td>
+        </tr>
+        <tr> 
+            <td>
+                >>>
+            </td>
+            <td>
+                x
+            </td>
+        </tr>
+        <!-- Output -->
+        <tr> 
+            <td>
+                
+            </td>
+            <td style="color: blue">
+                19
+            </td>
+        </tr>
+        <!-- Input -->
+        <tr> 
+            <td>
+                >>>
+            </td>
+            <td>
+                result = content[x:30].capitalize()
+            </td>
+        </tr>
+        <tr> 
+            <td>
+                >>>
+            </td>
+            <td>
+                result
+            </td>
+        </tr>
+        <tr> 
+        <!-- Output -->
+        <tr> 
+            <td>
+                
+            </td>
+            <td style="color: blue">
+                'Interesting'
+            </td>
+        </tr>
+        <!-- Input -->
+        <tr> 
+            <td>
+                >>>
+            </td>
+            <td>
+                print(str.rfind.__doc__)
+            </td>
+        </tr>
+        <tr> 
+        <!-- Output -->
+        <tr> 
+            <td>
+                
+            </td>
+            <td style="color: blue">
+                Return the highest index in S where substring sub is found, such that sub is contained within S[start:end].
+            </td>
+        </tr>
+        <tr> 
+            <td>
+                
+            </td>
+            <td style="color: blue">
+                Optional arguments start and end are interpreted as in slice notation.
+            </td>
+        </tr>
+        <tr> 
+            <td>
+                >>>
+            </td>
+            <td>
+                print(str.find.__doc__)
+            </td>
+        </tr>
+        <tr> 
+        <!-- Output -->
+        <tr> 
+            <td>
+                
+            </td>
+            <td style="color: blue">
+                Return the lowest index in S where substring sub is found, such that sub is contained within S[start:end].
+            </td>
+        </tr>
+        <tr> 
+            <td>
+                
+            </td>
+            <td style="color: blue">
+                Optional arguments start and end are interpreted as in slice notation.
+            </td>
+        </tr>
+        <!-- Resume at line 74 -->
+
+        
+        <!-- Input -->
+        <tr> 
+            <td>
+                >>>
+            </td>
+            <td>
+                "This" is "This".upper()
+            </td>
+        </tr>
+        <!-- Output -->
+        <tr> 
+            <td>
+                
+            </td>
+            <td style="color: blue">
+                False
+            </td>
+        </tr>
+        <!-- Input -->
+        <tr> 
+            <td>
+                >>>
+            </td>
+            <td>
+                math.isqrt(17)
+            </td>
+        </tr>
+        <!-- Output -->
+        <tr> 
+            <td>
+                
+            </td>
+            <td style="color: blue">
+                4
+            </td>
+        </tr>
+        <!-- Input -->
+        <tr> 
+            <td>
+                >>>
+            </td>
+            <td>
+                math.sqrt(16)
+            </td>
+        </tr>
+        <!-- Output -->
+        <tr> 
+            <td>
+                
+            </td>
+            <td style="color: blue">
+                4.0
+            </td>
+        </tr>
+        <!-- Input -->
+        <tr> 
+            <td>
+                >>>
+            </td>
+            <td>
+                math.isnan(float('nan'))
+            </td>
+        </tr>
+        <!-- Output -->
+        <tr> 
+            <td>
+                
+            </td>
+            <td style="color: blue">
+                True
+            </td>
+        </tr>
+        <!-- Input -->
+        <tr> 
+            <td>
+                >>>
+            </td>
+            <td>
+                amount = 1250
+            </td>
+        </tr>
+        <tr> 
+            <td>
+                >>>
+            </td>
+            <td>
+                print("{:10.2f}".format(amount))
+            </td>
+        </tr>
+        <!-- Output -->
+        <tr> 
+            <td>
+                
+            </td>
+            <td style="color: blue">
+                ___250.00
+            </td>
+        </tr>
     </table>
 
 
